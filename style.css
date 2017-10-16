@@ -17,6 +17,11 @@ body {
     height: 100%;
 }
 
+p {
+    font-size: 11.5pt;
+}
+
+
 a {
     color: white;
     text-decoration: none;
@@ -54,14 +59,14 @@ nav {
 
 .header {
     width: 100vw;
-    height: 92vh;
+    height: 740px;
     background: linear-gradient(300deg, #00E1FF, #473CC6);
 }
 
 
 .header .text {
     position: relative;
-    top: 21vh;
+    top: 170px;
     color: white;
     
 }
@@ -88,18 +93,18 @@ nav {
 
 
 #header-tiles {
-    height: 105vw;
+    height: 1500px;
     position: absolute;
-    right: -40vw;
-    top: -45vh;
+    right: -450px;
+    top: -300px;
     z-index: 0;
 }
 
 
 #header-iphones {
     position: relative;
-    height: 580px;
-    top: -90px;
+    height: 560px;
+    top: -120px;
     left: 420px;
     z-index: 1;
 }
@@ -108,14 +113,14 @@ nav {
 #scrolldown {
     height: 120px;
     position: absolute;
-    bottom: 200px;
+    top: 220px;
     transition: all 0.4s ease-in-out;
 }
 
 
 #scrolldown:hover {
     cursor: pointer;
-    bottom: 190px;
+    margin-top: 1em;
 }
 
 
@@ -228,8 +233,8 @@ nav {
     display: block;
     float: left;
     margin-top: 2em;
-    width: 90%;
-    font-size: 12.5pt;
+    width: 450px;
+    font-size: 11.5pt;
 
 }
 
@@ -240,18 +245,10 @@ nav {
 }
 
 
-.icon-wrapper img {
-    display: inline;
-    vertical-align: middle;
-}
-
-
 .icon-wrapper h2 {
     display: inline;
     position: relative;
-    padding-left: 20px;
-    top: 6px;
-    font-size: 23pt;
+    font-size: 22pt;
     font-weight: 500;
     color: #4e4e4e;
 
@@ -299,8 +296,7 @@ nav {
 .startup-solutions .icon-point h2 {
     font-weight: 500;
     color: #4e4e4e;
-    font-size: 25pt;
-    padding-top: 1em;
+    font-size: 22pt;
     margin: auto;
     display: block;
 }
@@ -322,10 +318,10 @@ nav {
 
 
 .service .feature h2 {
-    margin-top: 1em;
+    margin-top: 2em;
     font-weight: 500;
     color: #4e4e4e;
-    font-size: 23pt;
+    font-size: 22pt;
 }
 
 
@@ -342,7 +338,7 @@ nav {
 
 
 .feature hr {
-    margin-top: 4.5em;
+    margin-top: 10em;
     border: 0.5px solid rgba(0,0,0, 0.4);
     width: 370px;
 }
@@ -359,13 +355,14 @@ nav {
 
 
 .right-image img {
-    width: 88%;
-    height: 70%;
+    width: 500px;
+    height: 400px;
     float: right;
     box-shadow: 0px 25px 60px rgba(0,0,0,0.10);
 }
 
 
+/* 
 .pricing {
     display: block;
     width: 100vw;
@@ -444,12 +441,12 @@ nav {
 .btn {
     font-size: 12pt;
     font-weight: 500;
-}
+} */
 
 
 .why-us {
     position: relative;
-    top: 550px;
+    top: 450px;
 }
 
 
