@@ -10,6 +10,11 @@ body {
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: 'Avenir';
+    src: url(assets/fonts/avenir.ttc);
+}
+
 
 .container {
     width: 1170px;
