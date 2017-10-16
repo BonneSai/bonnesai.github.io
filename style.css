@@ -11,7 +11,7 @@ body {
 }
 
 @font-face {
-    font-family: 'Avenir';
+    font-family: Avenir;
     src: url(assets/fonts/avenir.ttc);
 }
 
