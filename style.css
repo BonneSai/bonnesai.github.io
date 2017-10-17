@@ -10,10 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-@font-face {
-    font-family: Avenir;
-    src: url(assets/fonts/avenir.ttc);
-}
+
 
 
 .container {
@@ -84,7 +81,7 @@ nav {
 
 
 .header .text hr {
-    width: 170px;
+    width: 140px;
     border: 1px solid white;
 }
 
@@ -715,14 +712,18 @@ footer .social-footer {
         color: white;
         
     }
+
+    .header {
+        height: 1200px;
+    }
     
     
     
     
     #header-tiles {
-        height: 100vw;
-        right: -20vw;
-        top: -72vh;
+        height: 2500px;
+        right: -600px;
+        top: -490px;
         z-index: 0;
     
     }
