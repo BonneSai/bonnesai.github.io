@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Contact Us</title>
+    <link href="contact.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="contact.js"></script>
+
+  </head>
+
+  <body>
+
+        <section class="header">
+                
+                <div class="container">
+        
+                <nav class="nav">
+        
+                    <ul class="left">
+        
+                    <li>
+                        <a href="index.html">BonneSai</a>
+                    </li>
+        
+                    </ul>
+        
+                    <ul class="right">
+        
+                        <li>
+                        <a class="ul-links" href="index.html">Home</a>
+                        </li>
+        
+                        <li>
+                        <a class="ul-links" href="index.html">About</a>
+                        </li>
+        
+        
+                        <li style="padding-right: 0;">
+                        <a href="#" class="btn">Let's Chat</a>
+                        </li>
+        
+                    </ul>
+        
+                </nav>
+            
+        
+                <div class="form">
+                        <form  action="https://formspree.io/dylanbirot@bonnesai.com" method="POST">
+                
+                          <div class="input-name">
+                
+                            <h1>My name is</h1>
+                            <input class="line-input" autofocus name="name" id="name" placeholder="Jane Doe"></input>
+                
+                          </div>
+                
+                          <div class="input-services">
+                
+                            <h1>I'm in need of a</h1>
+                            <input class="checkbox" name="website" type="checkbox" id="website"></input><label for="website">Website</label>
+                            <input class="checkbox" name="app" type="checkbox" id="app"></input><label for="app">Mobile App</label>
+                
+                          </div>
+                
+                
+                          <div class="input-budget">
+                
+                            <h1>My budget is</h1>
+                            <input class="line-input" name="budget" id="line" placeholder="$10,000"></input>
+                
+                          </div>
+                
+                
+                          <div class="input-email">
+                
+                            <h1>My email is</h1>
+                            <input class="line-input" name="_replyto" type="email" id="email" placeholder="someone@company.com"></input>
+                
+                          </div>
+                
+                
+                          <div class="input-message">
+                
+                            <h1>Leave us a message :)</h1>
+                            <textarea class="line-input" name="message" id="message"></textarea>
+                
+                          </div>
+                
+                
+                
+                
+                
+                          <div class="controls">
+
+                            <a href="#" id="next1" class="hollow-btn">Next Step</a>
+                
+                            <p id="null-prompt">Field cannot be left empty</p>
+                
+                
+                            <a href="#" id="next2" class="hollow-btn">Next Step</a>
+                
+                            <p id="unchecked-prompt">Please check one of the above to continue</p>
+                
+                            <a href="#" id="next3" class="hollow-btn">Next Step</a>
+                
+                            <p id="optional-prompt">This field is optional</p>
+                
+                            <a href="#" id="next4" class="hollow-btn">Next Step</a>
+                
+                            <p id="empty-prompt">Field cannot be left empty</p>
+                
+                            <input type="hidden" name="_next" value="http://www.bonnesai.com" />
+                            
+                
+                            <input type="submit" id="next5" class="hollow-btn" value="Submit">
+                
+                          </div>
+                
+                        </form>
+                
+                      </div>
+                
+                      <div class="sent">
+                        <h1>Your message has been sent!</h1>
+                        <hr />
+                        <p>We will be in touch with you as soon as we can.</p>
+                
+                        <a href="index.html" class="btn">Return to Home</a>
+                
+                      </div>
+                
+                
+                    </div>
+        
+                </div>
+        
+        
+                </div>
+        
+                <img id="header-tiles" src="assets/images/header-tiles.png" draggable="false" />
+        
+            </section>
+
+
+      
+
+
+
+  </body>
+
+</html>
