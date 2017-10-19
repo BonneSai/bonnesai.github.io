@@ -28,6 +28,11 @@
 }
 
 
+@keyframes scroll-down {
+    from {margin-top: 30px; opacity: 0;}
+    to {margin-top: 0px; opacity: 1;}
+}
+
 
 @keyframes slide-up {
     0% {
@@ -170,7 +175,7 @@ nav {
     width: 100vw;
     height: 740px;
     background: linear-gradient(300deg, #00E1FF, #473CC6);
-    animation: expand-left-to-right 1.5s cubic-bezier(.49,.01,0,1);
+    animation: expand-left-to-right 1.5s cubic-bezier(.92,.07,0,1);
 }
 
 
@@ -233,9 +238,10 @@ nav {
 
 
 #scrolldown {
+    visibility: hidden;
     height: 120px;
     position: absolute;
-    top: 220px;
+    top: 230px;
     transition: all 0.4s ease-in-out;
 }
 

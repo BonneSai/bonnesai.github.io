@@ -4,12 +4,12 @@ $(document).ready(function() {
         $('#next1').click(function() {
     
             if (!$('#name').val()) {
-                $('#null-prompt').css('display', 'inline-block').css('animation', 'panup 0.6s ease-in-out')
+                $('#null-prompt').css('display', 'inline-block').css('animation', 'pan-in 2s cubic-bezier(.49,.01,0,1);')
             } else {
     
                 $('#null-prompt').fadeOut();
-                $('.input-name').css("animation", "panout 1s ease-out")
-                $('#next1').css("animation", "panout 1s ease-out")
+                $('.input-name').css("animation", "pan-in 2s cubic-bezier(.49,.01,0,1);")
+                $('#next1').css("animation", "pan-in 2s cubic-bezier(.49,.01,0,1);")
     
     
                 setTimeout(function() {

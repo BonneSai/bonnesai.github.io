@@ -26,6 +26,11 @@
 }
 
 
+@keyframes scroll-down {
+    from {margin-top: 30px; opacity: 0;}
+    to {margin-top: 0px; opacity: 1;}
+}
+
 
 
 @keyframes slide-up {
@@ -124,6 +129,7 @@ nav {
 
 
 .header .text {
+    visibility: hidden;
     position: relative;
     margin: auto;
     top: 170px;
@@ -162,6 +168,7 @@ nav {
 
 
 #scrolldown {
+    visibility: hidden;
     height: 120px;
     position: absolute;
     top: 65%;

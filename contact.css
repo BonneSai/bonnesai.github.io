@@ -1,3 +1,67 @@
+@keyframes pan-in {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        position: relative;
+        top: 80px;
+        left: 20px;
+        transform: rotate(-7deg);
+        transform: skewY(-10deg);
+        transform: skewX(10deg);
+        
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        transform: rotate(0deg);
+        transform: skewY(0);
+        transform: skewX(0deg);
+        
+        
+
+    }
+
+}
+
+
+@keyframes scroll-down {
+    from {margin-top: 30px; opacity: 0;}
+    to {margin-top: 0px; opacity: 1;}
+}
+
+
+@keyframes slide-up {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        position: relative;
+        top: 30px;
+        transform: skewY(-5deg);
+        transform: skewX(5deg);
+        
+    }
+
+    100% {
+        opacity: 1;
+        position: relative;
+        top: 0px;
+        transform: skewY(0);
+        transform: skewX(0deg);
+        
+        
+
+    }
+
+}
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -197,7 +261,7 @@ nav {
     font-weight: 400;
     display: inline-block;
     color: white;
-    animation: panin 1.5s ease-in-out;
+    animation: pan-in 2s cubic-bezier(.49,.01,0,1);;
     animation-delay: 0.2s;
   }
 
@@ -211,7 +275,7 @@ nav {
       border: none;
       margin-left: 20px;
       color: white;
-      animation: panin 1.5s ease-in-out;
+      animation: pan-in 2s cubic-bezier(.49,.01,0,1);;
       animation-delay: 0.2s;
   }
 
