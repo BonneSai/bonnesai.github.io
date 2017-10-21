@@ -228,8 +228,8 @@ nav {
 #header-iphones {
     visibility: hidden;
     position: relative;
-    height: 560px;
-    top: -120px;
+    height: 500px;
+    top: -90px;
     left: 420px;
     z-index: 1;
     animation: slide-from-right 2s cubic-bezier(.49,.01,0,1);
