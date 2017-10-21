@@ -2,6 +2,7 @@ $(document).ready(function() {
         
 
     $('.header').children().css('opacity', '0');
+    $('.header .hollow-btn').children().css('visibility', 'hidden');
     $('#header-tiles').css('opacity', '1');
 
 

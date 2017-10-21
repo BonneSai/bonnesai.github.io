@@ -28,6 +28,101 @@
 }
 
 
+
+@keyframes send-off {
+    from {
+        position: relative;
+        left: 0px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to {
+        position: relative;
+        left: 200px;
+        opacity: 0;
+    }
+    
+}
+
+
+@keyframes send-off-faded {
+    from {
+        position: relative;
+        left: 0px;
+        opacity: 0.3;
+        visibility: visible;
+    }
+
+    to {
+        position: relative;
+        left: 200px;
+        opacity: 0;
+    }
+    
+}
+
+
+
+@keyframes pan-in-faded {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        position: relative;
+        top: 80px;
+        left: 20px;
+        transform: rotate(-7deg);
+        transform: skewY(-10deg);
+        transform: skewX(10deg);
+        
+    }
+
+    100% {
+        display: block;
+        opacity: 0.3;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        transform: rotate(0deg);
+        transform: skewY(0);
+        transform: skewX(0deg);
+        
+        
+
+    }
+
+}
+
+
+@keyframes pan-out {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        transform: rotate(0deg);
+        transform: skewY(0deg);
+        transform: skewX(0deg);
+        
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+        position: relative;
+        top: -80px;
+        left: -20px;
+        transform: rotate(7deg);
+        transform: skewY(10deg);
+        transform: skewX(-10deg);
+        
+        
+
+    }
+}
+
+
 @keyframes scroll-down {
     from {margin-top: 30px; opacity: 0;}
     to {margin-top: 0px; opacity: 1;}
@@ -59,7 +154,9 @@
 }
 
 
-
+body {
+    background: linear-gradient(300deg, #00E1FF, #473CC6);
+}
 
 
 * {
@@ -73,7 +170,7 @@
 
   input::-webkit-input-placeholder {
       color: white;
-      opacity: 0.2;
+      
   }
 
   a:link {
@@ -90,6 +187,7 @@
 
   html {
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   body {
@@ -105,10 +203,6 @@
     font-family: 'Avenir';
     line-height: 2;
     -webkit-font-smoothing: antialiased;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 
@@ -158,6 +252,8 @@ body {
     height: 100%;
 }
 
+
+
 p {
     font-size: 11.5pt;
 }
@@ -186,18 +282,23 @@ nav {
 .header {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(300deg, #00E1FF, #473CC6);
     background-size: 150%;
     z-index: -2;
 }
 
-
 #header-tiles {
-    height: 1700px;
-    position: relative;
+    height: 200vh;
+    position: absolute;
     right: -450px;
     top: -300px;
-    z-index: -1;
+    z-index: 0;
+}
+
+#header-iphones {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 650px;
 }
 
 
@@ -248,35 +349,56 @@ nav {
 }
 
 
-
-  .form {
-    position: absolute;
+.inputs {
+    width: 100%;
+    height: 300px;
+    position: relative;
     top: 50%;
-    transform: translateY(-50%);
-  }
+    transform: translateY(-70%);
+    
+}
 
-  .form h1 {
 
-    font-size: 28pt;
-    font-weight: 400;
-    display: inline-block;
+.controls {
+    width: 100%;
+    height: 50px;
+    padding-top: 1em;
+    position: relative;
+    top: 100px;
+}
+
+
+.inputs .one h2 {
+    font-size: 30pt;
+    font-weight: 500;
     color: white;
-    animation: pan-in 2s cubic-bezier(.49,.01,0,1);;
-    animation-delay: 0.2s;
+    animation: pan-in 2s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0.4s;
+    visibility: hidden;
+}
+
+
+  .one .line-input {
+    width: auto;
+    font-size: 26pt;
+    font-weight: 400;
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    opacity: 0.3;
+    animation: pan-in-faded 2s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0.4s;
+    line-height: 0;
+    visibility: hidden;
+    
   }
 
 
-  .line-input {
-      width: 400px;
-      font-size: 30pt;
-      font-weight: 500;
-      display: inline-block;
-      background: none;
-      border: none;
-      margin-left: 20px;
-      color: white;
-      animation: pan-in 2s cubic-bezier(.49,.01,0,1);;
-      animation-delay: 0.2s;
+  #next1 {
+    animation: slide-up 2s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0.4s;
+    visibility: hidden;
   }
 
   .line-input:focus, .line-input:active {
@@ -284,65 +406,134 @@ nav {
   }
 
 
-    .input-services {
-        opacity: 0;
-        margin-bottom: 1em;
-        color: white;
-        z-index: 9999;
-    }
-
-    input[type=checkbox] {
-        visibility: hidden;
-    }
-
-    #website:checked + label {
-        background: white;
-        color: #514A9D;
-    }
-
-    #app:checked + label {
-        background: white;
-        color: #514A9D;
-    }
-
-    #app {
-        margin-left: -1em;
-    }
-
-    label {
-        display: inline-block;
-        box-sizing: border-box;
-        border: 1px solid white;
-        padding: 0.8em 2.5em;
-        margin-left: 2em;
-    }
-
-    #next2 {
-        display: none;
-    }
+  .two h2 {
+    font-size: 30pt;
+    font-weight: 500;
+    color: white;
+    visibility: hidden;
+  }
+  
+  .two .line-input {
+    width: auto;
+    font-size: 26pt;
+    font-weight: 400;
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    opacity: 0.3;
+    line-height: 0;
+    visibility: hidden;
+  }
 
 
-    #next3 {
-        display: none;
-    }
-
-    #next4 {
-        display: none;
-    }
+  .company-controls {
+      visibility: hidden;
+  }
 
 
-    .input-budget {
-        display: none;
-        margin-bottom: 1em;
-    }
+
+  .three h2 {
+    font-size: 30pt;
+    font-weight: 500;
+    color: white;
+    visibility: hidden;
+  }
+  
+  .three .line-input {
+    width: auto;
+    font-size: 26pt;
+    font-weight: 400;
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    opacity: 0.3;
+    line-height: 0;
+    visibility: hidden;
+  }
 
 
-    .controls {
-        
-        position: relative;
-        top: 100px;
-        height: 70px;
-    }
+  .email-controls {
+    visibility: hidden;
+}
+
+.four h2 {
+    font-size: 30pt;
+    font-weight: 500;
+    color: white;
+    visibility: hidden;
+  }
+  
+  .four .line-input {
+    width: auto;
+    font-size: 26pt;
+    font-weight: 400;
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    opacity: 0.3;
+    line-height: 0;
+    visibility: hidden;
+    border-bottom: 1px solid white;
+  }
+
+
+  .budget-controls {
+    visibility: hidden;
+}
+
+
+
+.five h2 {
+    font-size: 30pt;
+    font-weight: 500;
+    color: white;
+    visibility: hidden;
+  }
+  
+  .five .line-input {
+    width: 600px;
+    font-size: 26pt;
+    font-weight: 400;
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    opacity: 0.3;
+    line-height: 0;
+    visibility: hidden;
+  }
+
+
+  .about-controls {
+    visibility: hidden;
+}
+
+
+.sent h2 {
+    font-size: 30pt;
+    font-weight: 500;
+    color: white;
+    visibility: hidden;
+  }
+  
+  .sent p {  
+    font-size: 16pt;
+    font-weight: 400;
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    visibility: hidden;
+  }
+
+
+  .sent-controls {
+    visibility: hidden;
+  }
+
     
 
     #null-prompt {
@@ -353,117 +544,11 @@ nav {
         display: none;
     }
 
-    #unchecked-prompt {
-        color: white;
-        font-style: italic;
-        display: inline-block;
-        margin-left: 2em;
-        display: none;
-    }
-
-    #optional-prompt {
-        color: white;
-        font-style: italic;
-        display: inline-block;
-        margin-left: 2em;
-        display: none;
-    }
-
-    #empty-prompt {
-        color: white;
-        font-style: italic;
-        display: inline-block;
-        margin-left: 2em;
-        display: none;
-    }
-
-    .input-email {
-        display: none;
-        width: 1200px !important;
-        margin-bottom: 1em;
-    }
-
-    #email {
-        width: 480px;
-        margin-bottom: 2em;
-    }
-
-    .input-budget {
-        display: none;
-        margin-bottom: 1em;
-    }
-
-    .input-message {
-        margin-top: -7em;
-        display: none;
-    }
-
-    #message {
-        margin-left: 0;
-        width: 500px;
-        display: block;
-        font-size: 20pt;
-        height: 200px;
-        margin-bottom: 1em;
-    }
-
-    #next5 {
-       display: none;
-    }
-
-
-    .sent {
-        width: 1170px;
-        display: none;
-        height: 500px;
-        margin: auto;
-    }
-
-    .sent h1 {
-        padding-top: 4.4em;
-        font-size: 28pt;
-        padding-bottom: 1em;
-        font-weight: 500;
-        color: white;
-        animation: panin 1.5s ease-in-out;
-      }
-
-      .sent hr {
-        width: 7em;
-        border: 1px solid white;
-        position: relative;
-        right: 3em;
-
-
-      }
-
-      .sent p {
-        width: 450px;
-        font-size: 11.5pt;
-        line-height: 2.4;
-        padding-top: 2em;
-        color: white;
-        animation: panup 1.5s ease-in-out;
-        margin-bottom: 2em;
-      }
+   
 
 
 
-  @keyframes panin {
-    0% {position: relative; top: 30px; opacity: 0; transform: rotate(3deg); transform: translateX(20deg);}
-    100% {position: relative; top: 0; opacity: 1;}
-  }
 
-
-  @keyframes panout {
-      0% {position: relative; top: 0; }
-      100% {position: relative; top: -30px; opacity: 0; transform: rotateZ(-3deg);}
-  }
-
-  @keyframes panup {
-    0% {position: relative; top: 20px; opacity: 0; transform: rotate(-5deg);}
-    100% {position: relative; top: 0;}
-  }
 
 
 
@@ -525,17 +610,18 @@ nav {
 
 @media screen and (min-width: 1800px) {
 
-    .form {
-        top: 30vh;
+    .controls {
+        top: 450px;
     }
 
-    #slice {
-        right: 0;
-    }
 
-    .sent {
-      margin-top: 15em;
+    #header-tiles {
+        height: 220vh;
+        top: -50vh;
+        left: 55vw;
     }
-
+   
+    #header-iphones {
+        width: 1200px;
 
 }

@@ -14,133 +14,147 @@
         <section class="header">
                 
                 <div class="container">
-        
-                <nav class="nav">
-        
-                    <ul class="left">
-        
-                    <li>
-                        <a href="index.html">BonneSai</a>
-                    </li>
-        
-                    </ul>
-        
-                    <ul class="right">
-        
-                        <li>
-                        <a class="ul-links" href="index.html">Home</a>
-                        </li>
-        
-                        <li>
-                        <a class="ul-links" href="index.html">About</a>
-                        </li>
-        
-        
-                        <li style="padding-right: 0;">
-                        <a href="#" class="btn">Let's Chat</a>
-                        </li>
-        
-                    </ul>
-        
-                </nav>
-            
-        
-                <div class="form">
-                        <form  action="https://formspree.io/dylanbirot@bonnesai.com" method="POST">
-                
-                          <div class="input-name">
-                
-                            <h1>My name is</h1>
-                            <input class="line-input" autofocus name="name" id="name" placeholder="Jane Doe"></input>
-                
-                          </div>
-                
-                          <div class="input-services">
-                
-                            <h1>I'm in need of a</h1>
-                            <input class="checkbox" name="website" type="checkbox" id="website"></input><label for="website">Website</label>
-                            <input class="checkbox" name="app" type="checkbox" id="app"></input><label for="app">Mobile App</label>
-                
-                          </div>
-                
-                
-                          <div class="input-budget">
-                
-                            <h1>My budget is</h1>
-                            <input class="line-input" name="budget" id="line" placeholder="$10,000"></input>
-                
-                          </div>
-                
-                
-                          <div class="input-email">
-                
-                            <h1>My email is</h1>
-                            <input class="line-input" name="_replyto" type="email" id="email" placeholder="someone@company.com"></input>
-                
-                          </div>
-                
-                
-                          <div class="input-message">
-                
-                            <h1>Leave us a message :)</h1>
-                            <textarea class="line-input" name="message" id="message"></textarea>
-                
-                          </div>
-                
-                
-                
-                
-                
-                          <div class="controls">
 
-                            <a href="#" id="next1" class="hollow-btn">Next Step</a>
+                  <nav class="nav">
+                    
+                      <ul class="left">
+          
+                      <li>
+                          <a href="index.html">BonneSai</a>
+                      </li>
+          
+                      </ul>
+          
+                      <ul class="right">
+          
+                          <li>
+                          <a class="ul-links" href="index.html#">Home</a>
+                          </li>
+          
+                          <li>
+                          <a class="ul-links" href="about.html">About</a>
+                          </li>
+          
+          
+                          <li style="padding-right: 0;">
+                          <a href="#" class="btn">Let's Chat</a>
+                          </li>
+          
+                      </ul>
+          
+                  </nav>
+                        
                 
-                            <p id="null-prompt">Field cannot be left empty</p>
-                
-                
-                            <a href="#" id="next2" class="hollow-btn">Next Step</a>
-                
-                            <p id="unchecked-prompt">Please check one of the above to continue</p>
-                
-                            <a href="#" id="next3" class="hollow-btn">Next Step</a>
-                
-                            <p id="optional-prompt">This field is optional</p>
-                
-                            <a href="#" id="next4" class="hollow-btn">Next Step</a>
-                
-                            <p id="empty-prompt">Field cannot be left empty</p>
-                
-                            <input type="hidden" name="_next" value="http://www.bonnesai.com" />
-                            
-                
-                            <input type="submit" id="next5" class="hollow-btn" value="Submit">
-                
-                          </div>
-                
-                        </form>
-                
+                  <img id="header-tiles" src="assets/images/header-tiles.png" draggable="false" />
+
+                  <img id="header-iphones" src="assets/images/mockup-corner.png" draggable="false" />
+      
+                    <div class="inputs"> 
+
+                      <div class="field one">
+                        <h2>Hello there! What is your name?</h2>
+                        <input class="line-input" id="name" type="text" autofocus autocomplete="off" placeholder="Last Name, First Name" />
                       </div>
-                
-                      <div class="sent">
-                        <h1>Your message has been sent!</h1>
-                        <hr />
-                        <p>We will be in touch with you as soon as we can.</p>
-                
-                        <a href="index.html" class="btn">Return to Home</a>
-                
+
+                      <div class="field two">
+                        <h2>What is the name of your company?</h2>
+                        <input class="line-input" id="company" type="text" autocomplete="off" autofocus placeholder="Pied Piper Inc." />
                       </div>
-                
-                
+
+                      <div class="field three">
+                        <h2>What is your email?</h2>
+                        <input class="line-input" id="email" type="text" autocomplete="off" autofocus placeholder="someone@company.com" />
+                      </div>
+
+
+                      <div class="field four">
+                        <h2>What is your estimated budget?</h2>
+                        <input class="line-input" id="budget" type="text" autocomplete="off" autofocus value="$" />
+                      </div>
+
+
+                      <div class="field five">
+                        <h2>Tell us a bit about your project</h2>
+                        <input class="line-input" id="about" type="text" autocomplete="off" autofocus placeholder="Describe in a few words..." />
+                      </div>
+
+
+                      <div class="field sent">
+                        <h2>Your message has been sent!</h2>
+                        <p>We will be in touch with you shortly :)</p>
+                      </div>
+
+
                     </div>
-        
+
+
+                    <div class="controls">
+
+                      <div class="name-controls">
+                        <a href="#" id="next1" class="hollow-btn">Next Step</a>
+                        <p id="null-prompt">Field cannot be left empty</p>
+                      </div>
+
+
+                      <div class="company-controls">
+                        <a href="#" id="next2" class="hollow-btn">Next Step</a>
+                        <p id="null-prompt">Field cannot be left empty</p>
+                      </div>
+
+
+                      <div class="email-controls">
+                        <a href="#" id="next3" class="hollow-btn">Next Step</a>
+                        <p id="null-prompt">Field cannot be left empty</p>
+                      </div>
+
+
+
+                      <div class="budget-controls">
+                        <a href="#" id="next4" class="hollow-btn">Next Step</a>
+                        <p id="null-prompt">This field is optional</p>
+                      </div>
+
+
+                      <div class="about-controls">
+                        <a href="#" id="next5" class="hollow-btn">Submit</a>
+                        <p id="null-prompt">Please enter your message</p>
+                      </div>
+
+
+                      <div class="sent-controls">
+                        <a href="#" id="next6" class="hollow-btn">Return Home</a>
+                        <p id="null-prompt"></p>
+                      </div>
+
+
+          
+
+
+                      
+
+
+
+                    </div>
+
+
+                    <form action="https://formspree.io/dylanbirot@bonnesai.com" method="POST" hidden>
+
+                      <input id="name-field" type="text" name="name" />
+                      <input id="company-field" type="text" name="company" />
+                      <input id="email-field" type="text" name="_replyTo" />
+                      <input id="budget-field" type="text" name="budget" />
+                      <input id="about-field" type="text" name="about" />
+                      <input type="hidden" name="_next" value="http://bonnesai.com/" />
+                      <input id="form-sub" type="submit" value="Send">
+
+                    </form>
+
+                  
                 </div>
-        
-        
-                </div>
-        
-                <img id="header-tiles" src="assets/images/header-tiles.png" draggable="false" />
-        
-            </section>
+
+                
+
+        </section>
 
 
       
