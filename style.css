@@ -830,7 +830,10 @@ footer .social-footer {
 
 @media screen and (max-width: 1000px) {
 
-    .body {
+
+
+
+    body {
         width: 100vw;
         overflow-x: hidden !important;
     }
@@ -840,11 +843,7 @@ footer .social-footer {
     }
 
     #header-tiles {
-        height: 200vh;
-        top: -36vh;
-        right: -180vw;
-        position: absolute;
-        overflow: hidden !important;
+        display: none;
     }
 
     #header-iphones {
