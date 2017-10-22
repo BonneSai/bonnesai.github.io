@@ -830,16 +830,31 @@ footer .social-footer {
 
 @media screen and (max-width: 1000px) {
 
+    .body {
+        width: 100vw;
+        overflow-x: hidden !important;
+    }
+
     .container {
         width: 900px;
     }
 
     #header-tiles {
-        display: none;
+        height: 200vh;
+        top: -36vh;
+        right: -180vw;
+        position: absolute;
+        overflow: hidden !important;
     }
 
     #header-iphones {
-        display: none;
+        position: absolute;
+        left: -7vw;
+        top: 58vh;
+        width: 110vw;
+        height: auto;
+        margin: auto;
+        animation: none;
     }
 
     .nav {
@@ -857,7 +872,7 @@ footer .social-footer {
     }
 
     .mobile-menu {
-        display: block;
+        display: none;
         height: 100vh;
         width: 100vw;
         position: absolute;
@@ -884,7 +899,7 @@ footer .social-footer {
     }
 
     .header {
-        height: 90vh;
+        height: 97vh;
     }
 
     .container {
@@ -907,21 +922,24 @@ footer .social-footer {
     .header .text {
         position: relative;
         top: 50%;
-        transform: translateY(-120%);
+        transform: translateY(-140%);
     }
 
     .header .text h1 {
-        font-size: 18pt;
+        font-size: 44pt;
         padding-bottom: 0.3em;
     }
 
     .header .text hr {
-        width: 120px;
+        width: 200px;
+        border: 3px solid white;
     }
 
 
     .header .text p {
         width: 100%;
+        padding-top: 1em;
+        font-size: 28pt;
     }
 
     #scrolldown {
