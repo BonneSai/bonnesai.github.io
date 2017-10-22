@@ -842,6 +842,32 @@ footer .social-footer {
         display: none;
     }
 
+    .nav .burger {
+        display: block !important; 
+        float: right;
+        margin-top: 10px;
+        width: 30px;
+        height: 20px;
+        margin-right: 1em;
+
+    }
+
+    #top {
+        width: 30px;
+        height: 3px;
+        background: white;
+
+    }
+
+    #bot {
+        position: relative;
+        top: 10px;
+        width: 30px;
+        height: 3px;
+        background: white;
+
+    }
+
     .header {
         height: 90vh;
     }
