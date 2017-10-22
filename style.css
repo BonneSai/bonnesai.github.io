@@ -828,6 +828,54 @@ footer .social-footer {
 
 
 
+@media screen and (max-width: 1000px) {
+
+    .container {
+        width: 900px;
+    }
+
+    #header-tiles {
+        display: none;
+    }
+
+    #header-iphones {
+        display: none;
+    }
+
+    .header {
+        height: 90vh;
+    }
+
+    .container {
+        width: 80vw;
+    }
+
+    .nav .right {
+        display: none;
+    }
+
+    .nav .left li {
+        font-size: 28pt;
+    }
+
+    .header .text {
+        position: relative;
+        top: 50%;
+        transform: translateY(-200%);
+    }
+
+    .header .text h1 {
+        font-size: 40pt;
+    }
+
+    .header .text hr {
+        width: 220px;
+        border: 2px solid white;
+    }
+
+}
+
+
 
 @media screen and (min-width: 1800px) {
 
