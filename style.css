@@ -842,28 +842,43 @@ footer .social-footer {
         display: none;
     }
 
+    .nav {
+        z-index: 9999 !important;
+    }
+
     .nav .burger {
         display: block !important; 
         float: right;
-        margin-top: 10px;
-        width: 30px;
-        height: 20px;
+        margin-top: 100px;
+        width: 70px;
+        height: 70px;
         margin-right: 1em;
+        z-index: 9999 !important;
+    }
 
+    .mobile-menu {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        
+        top: 0;
+        left: 0;
+        z-index: 900 !important;
     }
 
     #top {
-        width: 30px;
-        height: 3px;
+        width: 70px;
+        height: 5px;
         background: white;
 
     }
 
     #bot {
         position: relative;
-        top: 10px;
-        width: 30px;
-        height: 3px;
+        top: 25px;
+        width: 70px;
+        height: 5px;
         background: white;
 
     }
@@ -880,8 +895,13 @@ footer .social-footer {
         display: none;
     }
 
+    .nav {
+        padding-top: 1em;
+    }
+
     .nav .left li {
-        font-size: 15pt;
+        font-size: 35pt;
+        padding-top: 70px;
     }
 
     .header .text {
