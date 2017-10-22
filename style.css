@@ -855,22 +855,31 @@ footer .social-footer {
     }
 
     .nav .left li {
-        font-size: 28pt;
+        font-size: 15pt;
     }
 
     .header .text {
         position: relative;
         top: 50%;
-        transform: translateY(-200%);
+        transform: translateY(-120%);
     }
 
     .header .text h1 {
-        font-size: 40pt;
+        font-size: 18pt;
+        padding-bottom: 0.3em;
     }
 
     .header .text hr {
-        width: 220px;
-        border: 2px solid white;
+        width: 120px;
+    }
+
+
+    .header .text p {
+        width: 100%;
+    }
+
+    #scrolldown {
+        display: none;
     }
 
 }
