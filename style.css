@@ -491,6 +491,15 @@ nav {
 }
 
 
+.mobile-image-hr {
+    display: none;
+    border: 0.5px solid rgba(0,0,0, 0.2) !important;
+}
+
+
+
+
+
 /* 
 .pricing {
     display: block;
@@ -831,6 +840,10 @@ footer .social-footer {
 
 @media screen and (max-width: 1000px) {
 
+    p {
+        font-size: 28pt !important;
+    }
+
     body {
         overflow-x: hidden !important;
     }
@@ -919,12 +932,13 @@ footer .social-footer {
     .header .text {
         position: relative;
         top: 50%;
-        transform: translateY(-150%);
+        transform: translateY(-130%);
     }
 
     .header .text h1 {
         font-size: 44pt;
         padding-bottom: 0.3em;
+        font-weight: 500;
     }
 
     .header .text hr {
@@ -984,7 +998,176 @@ footer .social-footer {
     }
 
 
+    #services-img {
+        display: block !important;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 13em;
+    }
 
+
+    .services h2 {
+        font-size: 44pt;
+        margin-top: 2em;
+    }
+
+
+    .services .icon-point p {
+        font-size: 18pt !important; 
+        width: 100% !important;
+    }
+
+
+    .icon-tiles {
+        display: none;
+    }
+
+
+    .icon-point h2 {
+        font-size: 44pt !important;
+    }
+
+
+    .startup-solutions .icon-point p {
+        font-size: 28pt !important;
+        width: 100% !important;
+    }
+
+    .startup-solutions .icon-point hr {
+        height: 250px;
+        margin-top: 6em !important;
+    }
+
+
+    .services-list .service {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .service .feature {
+        width: 100%;
+        text-align: center;
+    }
+
+    .feature h2 {
+        font-size: 44pt !important;
+        margin-top: 0 !important;
+    }
+
+    .feature p {
+        width: 100%;
+        margin: 1.5em auto;
+    }
+
+    .right-image {
+        margin: auto;
+        width: 100%;
+        display: block;
+    }
+
+    .right-image img {
+        margin: auto;
+        width: 100%;
+        display: block;
+        height: auto;
+        margin-bottom: 6em;
+    }
+
+    .feature hr {
+        display: none;
+    }
+
+
+    .mobile-image-hr {
+        display: block;
+        width: 100%;
+        border: 1px solid black;
+        margin-bottom: 10em;
+    }
+
+
+    .card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        height: 4000px !important;
+    }
+    
+    
+    .card {
+        width: 100% !important;
+        height: 1200px !important;
+    }
+    
+    .card .image {
+        height: 500px !important;
+    }
+    
+    .card h2 {
+        font-size: 33pt !important;
+    }       
+    
+    
+    .btn {
+        margin-top: 0 !important;
+        width: 60% !important;
+        font-size: 29pt !important;
+    }
+
+    
+    .footer-links {
+        display: none !important;
+    }
+
+    .social-footer {
+        display: block !important;
+        justify-content: space-between;
+        width: 100% !important;
+
+    }
+
+    
+    .contact-center { 
+        width: 100% !important;
+        display: block !important;
+        height: 800px !important;
+    }
+
+    .contact-center h1 {
+        font-size: 38pt !important;
+    }
+
+    .contact-center .hollow-btn {
+        width: 35% !important;
+        font-size: 29pt !important;
+    }
+
+    #back-to-top {
+        width: 140px;
+        height: 140px;
+        margin-top: 7em;
+    }
+
+
+    .social-footer li img {
+        display: inline;
+        height: 50px !important;
+        width: auto;
+    }
+
+    footer {
+        height: 1200px;
+    }
+
+    footer .container {
+        display: block !important;
+    }
+
+
+    .social-footer ul {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+    }
 
 
 }
