@@ -148,6 +148,13 @@ nav {
 }
 
 
+.header-logo {
+    width: 25px;
+    margin-right: 1em;
+    vertical-align: middle;
+}
+
+
 .nav ul li {
     display: inline-block;
     padding-right: 4em;
@@ -170,6 +177,10 @@ nav {
 }
 
 
+.left li {
+    top: 5px;
+}
+
 
 .header {
     width: 100vw;
@@ -177,6 +188,7 @@ nav {
     background: linear-gradient(300deg, #00E1FF, #473CC6);
     animation: expand-left-to-right 1.5s cubic-bezier(.92,.07,0,1);
 }
+
 
 
 .header .text {
@@ -1013,7 +1025,7 @@ footer .social-footer {
 
 
     .services .icon-point p {
-        font-size: 18pt !important; 
+        font-size: 28pt !important; 
         width: 100% !important;
     }
 
