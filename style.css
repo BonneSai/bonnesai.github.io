@@ -188,8 +188,8 @@ nav {
 
 .header .text h1 {
     visibility: hidden;
-    font-size: 26pt;
-    font-weight: 500;
+    font-size: 28pt;
+    font-weight: 600;
     padding-bottom: 0.2em;
     animation: pan-in 2s cubic-bezier(.49,.01,0,1);
     animation-delay: 2.1s;
@@ -208,8 +208,9 @@ nav {
 .header .text p {
     visibility: hidden;
     width: 480px;
+    font-size: 13pt;
     line-height: 2;
-    padding-top: 1em;
+    padding-top: 1.5em;
     font-weight: 400;
     animation: pan-in 2s cubic-bezier(.49,.01,0,1);
     animation-delay: 2.2s;
@@ -241,7 +242,7 @@ nav {
     visibility: hidden;
     height: 120px;
     position: absolute;
-    top: 230px;
+    top: 250px;
     transition: all 0.4s ease-in-out;
 }
 
@@ -830,11 +831,7 @@ footer .social-footer {
 
 @media screen and (max-width: 1000px) {
 
-
-
-
     body {
-        width: 100vw;
         overflow-x: hidden !important;
     }
 
@@ -848,12 +845,13 @@ footer .social-footer {
 
     #header-iphones {
         position: absolute;
-        left: -7vw;
+        left: -3vw;
         top: 58vh;
-        width: 110vw;
+        width: 100vw;
         height: auto;
         margin: auto;
         animation: none;
+        overflow-x: hidden !important;
     }
 
     .nav {
@@ -866,7 +864,7 @@ footer .social-footer {
         margin-top: 100px;
         width: 70px;
         height: 70px;
-        margin-right: 1em;
+        
         z-index: 9999 !important;
     }
 
@@ -921,7 +919,7 @@ footer .social-footer {
     .header .text {
         position: relative;
         top: 50%;
-        transform: translateY(-140%);
+        transform: translateY(-150%);
     }
 
     .header .text h1 {
@@ -944,6 +942,50 @@ footer .social-footer {
     #scrolldown {
         display: none;
     }
+
+
+    .quote {
+        height: auto;
+        padding-top: 7em;
+        padding-bottom: 7em;
+        margin-bottom: 5em;
+    }
+
+    .quote h2 {
+        font-size: 35pt;
+    }
+
+    .quote p {
+        font-size: 28pt; 
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .whatwedo .text h1 {
+        font-size: 44pt;
+
+    }
+
+    .whatwedo .text p {
+        font-size: 28pt;
+        width: 100%;
+    }
+
+    .icon-tiles {
+        float: left;
+        display: block;
+        width: 100%;
+    }
+
+    .whatwedo .services {
+        clear: both;
+        width: 100%;
+    }
+
+
+
+
 
 }
 
