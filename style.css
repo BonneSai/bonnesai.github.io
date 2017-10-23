@@ -944,7 +944,7 @@ footer .social-footer {
     .header .text {
         position: relative;
         top: 50%;
-        transform: translateY(-130%);
+        transform: translateY(-140%);
     }
 
     .header .text h1 {
@@ -1116,7 +1116,11 @@ footer .social-footer {
     
     .card h2 {
         font-size: 33pt !important;
-    }       
+    }   
+    
+    .card .text p {
+        width: 90% !important;
+    }
     
     
     .btn {
@@ -1135,6 +1139,20 @@ footer .social-footer {
         justify-content: space-between;
         width: 100% !important;
 
+    }
+
+    .why-us {
+        margin-top: -14em;
+    }
+
+
+    .why-us p {
+        width: 100% !important;
+        margin-bottom: 2em;
+    }
+
+    .why-us hr {
+        height: 300px;
     }
 
     
