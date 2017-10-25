@@ -35,13 +35,83 @@
 
   <body>
 
+
+  <div class="mobile-menu">
+
+    <img class="mobile-menu-bg" src="assets/images/header-tiles.png" />
+        
+      <ul class="menu-links" >
+
+        <li>
+          <a href="index.html" >Home</a>
+        </li>
+
+        <li>
+            <a href="index.html" >About</a>
+        </li>
+
+        <li>
+            <a href="index.html" >Let's Chat</a>
+        </li>
+
+      </ul>
+
+
+  </div>
+          
+
     <section class="header">
 
       <div class="container">
 
         <nav class="nav">
 
-          <div class="nav-bg"></div>
+          <div class="nav-bg">
+            <div class="container desktop-fixed">
+            <ul class="left">
+              
+              <li>
+                <a href="index.html"><img class="header-logo" src="assets/icons/bonnesailogo.svg"/><span id="logo-text">BonneSai</span></a>
+              </li>
+  
+            </ul>
+  
+            <ul class="right">
+  
+                <li>
+                  <a class="ul-links" href="index.html">Home</a>
+                </li>
+  
+                <li>
+                  <a class="ul-links" href="about.html">About</a>
+                </li>
+  
+                <li style="padding-right: 0;">
+                  <a href="contact.html" class="btn">Let's Chat</a>
+                </li>
+  
+            </ul>
+          </div>
+
+
+          <div class="container mobile-fixed">
+
+              <ul class="left">
+                  
+                  <li>
+                    <a href="index.html"><img class="header-logo" src="assets/icons/bonnesailogo.svg"/><span id="logo-text">BonneSai</span></a>
+                  </li>
+      
+                </ul>
+
+              <div class="burger" style="display: none">
+                  <div id="top"></div>
+                  <div id="bot"></div>
+                </div>
+
+          </div>
+
+          </div>
 
           <ul class="left">
 
@@ -75,28 +145,7 @@
         </nav>
       
 
-        <div class="mobile-menu">
-
-
-          <ul class="menu-links" >
-
-            <li>
-              <a href="index.html" >Home</a>
-            </li>
-
-            <li>
-                <a href="index.html" >About</a>
-            </li>
-
-            <li>
-                <a href="index.html" >Let's Chat</a>
-            </li>
-
-          </ul>
-
-
-        </div>
-
+        
         
 
         <div class="text">
@@ -337,7 +386,7 @@
 
           </div>
 
-          <a href="#" class="btn">Our Services</a>
+          <a href="#" class="btn" style="z-index: -1 !important;">Our Services</a>
 
         </div>
 

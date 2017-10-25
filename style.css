@@ -28,6 +28,36 @@
 }
 
 
+@keyframes top-stroke-engage {
+    0% {
+        transform: rotate(0deg);
+        top: 0px;
+    }
+
+    100% {
+        transform: rotate(45deg);
+        top: 3px;
+    }
+}
+
+@keyframes bottom-stroke-engage {
+    0% {
+        transform: rotate(0deg);
+        top: 0px;
+    }
+
+    100% {
+        transform: rotate(-45deg);
+        top: -3px;
+    }
+}
+
+
+
+
+
+
+
 @keyframes scroll-down {
     from {margin-top: 30px; opacity: 0;}
     to {margin-top: 0px; opacity: 1;}
@@ -103,6 +133,35 @@
 }
 
 
+@keyframes expand-right-to-left {
+    0% {
+        display: block;
+        left: 100vw;
+        
+    }
+
+    100% {
+        display: block;
+        left: 0vw;
+    }
+
+}
+
+
+@keyframes exit-left-to-right {
+    0% {
+        left: 0vw;
+        
+    }
+
+    100% {
+        display: none;
+        left: 100vw;
+    }
+
+}
+
+
 
 @keyframes slideDown {
     0% { 
@@ -151,6 +210,10 @@ body {
 }
 
 
+.mobile-fixed {
+    display: none;
+}
+
 
 
 .container {
@@ -187,13 +250,37 @@ nav {
     position: fixed;
     z-index: 999;
     background: white;
-    box-shadow: 0px 7px 9px rgba(0,0,0, 0.14);
+    box-shadow: 0px 4px 6px rgba(0,0,0, 0.08);
     top: 0;
     left: 0;
     width: 100vw;
-    height: 4em;
+    height: 5em;
     display: none;
 }
+
+.nav-bg ul {
+    animation: none;
+}
+
+.nav-bg ul li a {
+    color: black;
+
+}
+
+#logo-text {
+    position: relative;
+    top: 2px;
+    font-weight: 500;
+}
+
+.nav-bg ul {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
 
 .nav ul li {
     display: inline-block;
@@ -217,6 +304,9 @@ nav {
     font-size: 13pt;
 }
 
+.mobile-menu {
+    display: none;
+}
 
 .mobile-menu ul {
     display: none;
@@ -325,13 +415,14 @@ nav {
     box-shadow: 0px 3px 6px rgba(0,0,0,0.08);
     transition: all 0.2s ease-in-out;
     z-index: 9999 !important;
+    color: white !important;
 }
 
 
 .btn:hover {
     box-shadow: 0px 25px 40px rgba(0,0,0,0.10);
     background: white;
-    color: #514A9D;
+    color: #514A9D !important;
 }
 
 
@@ -907,13 +998,22 @@ footer .social-footer {
         width: 900px;
     }
 
+    .desktop-fixed {
+        display: none;
+    }
+
+    .mobile-fixed {
+        display: block;
+        z-index: 9999 !important;
+    }
+
+
     #header-tiles {
         display: none;
     }
 
     .header-logo {
         width: 50px;
-        margin-top: -8px;
     }
 
 
@@ -934,8 +1034,7 @@ footer .social-footer {
      }
 
     .nav-bg {
-        position: fixed;
-        z-index: -2;
+        z-index: 999 !important;
         background: white;
         box-shadow: 0px 7px 9px rgba(0,0,0, 0.14);
         top: 0;
@@ -951,23 +1050,23 @@ footer .social-footer {
         margin-top: 72px;
         width: 70px;
         height: 70px;
-        
+
         z-index: 9999 !important;
     }
 
     .mobile-menu {
         display: none;
-        background: black;
+        background:#4C58A4;
         height: 100vh;
         width: 100vw;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
-        z-index: 10 !important;
+        z-index: 900 !important;
     }
 
     .mobile-menu ul {
-        background: pink;
+        display: block;
         font-size: 60pt;
         position: relative;
         top: 50%;
@@ -976,10 +1075,20 @@ footer .social-footer {
         list-style: none;
     }
 
+    .mobile-menu-bg {
+        position: absolute;
+        opacity: 0.26;
+        height: 200vh;
+        top: -40vh;
+        left: -60vw;
+    }
+
     .mobile-menu ul li {
-        line-height: 3;
+        line-height: 4;
         font-weight: 500;
     }
+
+
 
     #top {
         width: 70px;
@@ -1018,10 +1127,20 @@ footer .social-footer {
         padding-top: 45px;
     }
 
+    .mobile-fixed .left li {
+        padding-top: 0px;
+    }
+
+
+    .mobile-fixed .burger {
+        padding-top: 15px;
+    }
+
+
     .header .text {
         position: relative;
         top: 50%;
-        transform: translateY(-140%);
+        transform: translateY(-130%);
     }
 
     .header .text h1 {
