@@ -203,10 +203,11 @@ nav {
 
 
 .right {
-
+    position: relative;
     float: right;
     z-index: 100;
 }
+
 
 
 
@@ -323,7 +324,7 @@ nav {
     border-radius: 3px;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.08);
     transition: all 0.2s ease-in-out;
-    z-index: 1000 !important;
+    z-index: 9999 !important;
 }
 
 
@@ -821,6 +822,10 @@ footer .contact-center {
     transition: all 0.2s ease-in-out;
 }
 
+#back-to-top:focus {
+    outline: none;
+}
+
 
 #back-to-top:hover {
     box-shadow: 0px 25px 35px rgba(0,0,0,0.16);
@@ -925,7 +930,6 @@ footer .social-footer {
 
     .nav {
         z-index: 9999 !important;
-        position: fixed;
         width: 780px;
      }
 
