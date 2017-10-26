@@ -55,6 +55,11 @@
 
 
 
+@keyframes fade-in {
+    0% {opacity: 0; margin-top: 50px;}
+    100% {opacity: 1; margin-top: 0px;}
+}
+
 
 
 
@@ -1024,7 +1029,8 @@ footer .social-footer {
         width: 100vw;
         height: auto;
         margin: auto;
-        animation: none;
+        animation: fade-in 1s ease-in-out;
+        animation-delay: 2.1s;
         overflow-x: hidden !important;
     }
 
@@ -1139,8 +1145,7 @@ footer .social-footer {
 
     .header .text {
         position: relative;
-        top: 50%;
-        transform: translateY(-130%);
+        top: 400px;
     }
 
     .header .text h1 {
