@@ -1145,7 +1145,7 @@ footer .social-footer {
 
     .header .text {
         position: relative;
-        top: 200px;
+        top: 220px;
     }
 
     .header .text h1 {
@@ -1190,7 +1190,8 @@ footer .social-footer {
 
 
     .whatwedo .text h1 {
-        font-size: 44pt;
+        font-size: 55pt;
+
 
     }
 
@@ -1240,6 +1241,10 @@ footer .social-footer {
         font-size: 44pt !important;
     }
 
+
+    .startup-solutions h2 {
+        font-size: 55pt !important;
+    }
 
     .startup-solutions .icon-point p {
         font-size: 28pt !important;
@@ -1347,6 +1352,10 @@ footer .social-footer {
     }
 
 
+    .why-us .icon-point h2 {
+        font-size: 55pt !important;
+    }
+
     .why-us p {
         width: 100% !important;
         margin-bottom: 2em;
@@ -1377,6 +1386,11 @@ footer .social-footer {
         width: 140px;
         height: 140px;
         margin-top: 7em;
+    }
+
+    
+    #back-to-top img {
+        width: 30px;
     }
 
 
