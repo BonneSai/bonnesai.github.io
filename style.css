@@ -338,7 +338,7 @@ nav {
 .header .text h1 {
     visibility: hidden;
     font-size: 28pt;
-    font-weight: 600;
+    font-weight: 500;
     padding-bottom: 0.2em;
     
 }
@@ -893,7 +893,7 @@ footer .contact-center {
     border: 1px white solid;
     overflow:hidden;
     background: none;
-    z-index: 1;
+    z-index: 1 !important;
     cursor: pointer;
     transition:         0.08s ease-in;
     -o-transition:      0.08s ease-in;
@@ -1145,7 +1145,7 @@ footer .social-footer {
 
     .header .text {
         position: relative;
-        top: 400px;
+        top: 200px;
     }
 
     .header .text h1 {
@@ -1369,6 +1369,7 @@ footer .social-footer {
 
     .contact-center .hollow-btn {
         width: 35% !important;
+        border: 3px solid white;
         font-size: 29pt !important;
     }
 
