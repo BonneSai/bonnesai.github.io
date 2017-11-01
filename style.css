@@ -337,8 +337,8 @@ nav {
 
 .header .text h1 {
     visibility: hidden;
-    font-size: 28pt;
-    font-weight: 500;
+    font-size: 26pt;
+    font-weight: 600;
     padding-bottom: 0.2em;
     
 }
@@ -375,9 +375,9 @@ nav {
 #header-iphones {
     visibility: hidden;
     position: relative;
-    height: 500px;
+    height: 450px;
     top: -90px;
-    left: 420px;
+    left: 480px;
     z-index: 1;
     animation: slide-from-right 2s cubic-bezier(.49,.01,0,1);
     animation-delay: 2.1s;

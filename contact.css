@@ -418,6 +418,7 @@ nav {
 }
 
 
+
 .inputs .one h2 {
     font-size: 30pt;
     font-weight: 500;
@@ -439,7 +440,6 @@ nav {
     opacity: 0.3;
     animation: pan-in-faded 2s cubic-bezier(0.19, 1, 0.22, 1);
     animation-delay: 0.4s;
-    line-height: 0;
     visibility: hidden;
     
   }
@@ -472,7 +472,6 @@ nav {
     border: none;
     color: white;
     opacity: 0.3;
-    line-height: 0;
     visibility: hidden;
   }
 
@@ -499,7 +498,6 @@ nav {
     border: none;
     color: white;
     opacity: 0.3;
-    line-height: 0;
     visibility: hidden;
   }
 
@@ -524,7 +522,6 @@ nav {
     border: none;
     color: white;
     opacity: 0.3;
-    line-height: 0;
     visibility: hidden;
     border-bottom: 1px solid white;
   }
@@ -552,7 +549,6 @@ nav {
     border: none;
     color: white;
     opacity: 0.3;
-    line-height: 0;
     visibility: hidden;
   }
 
@@ -583,6 +579,7 @@ nav {
   .sent-controls {
     visibility: hidden;
   }
+
 
     
 
