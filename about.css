@@ -7,7 +7,7 @@
         transform: rotate(-7deg);
         transform: skewY(-10deg);
         transform: skewX(10deg);
-        
+
     }
 
     100% {
@@ -18,8 +18,8 @@
         transform: rotate(0deg);
         transform: skewY(0);
         transform: skewX(0deg);
-        
-        
+
+
 
     }
 
@@ -75,7 +75,7 @@
         margin-top: 30px;
         transform: skewY(-5deg);
         transform: skewX(5deg);
-        
+
     }
 
     100% {
@@ -84,8 +84,8 @@
         margin-top: 0px;
         transform: skewY(0);
         transform: skewX(0deg);
-        
-        
+
+
 
     }
 
@@ -104,7 +104,7 @@
         transform: rotate(-7deg);
         transform: skewY(-10deg);
         transform: skewX(10deg);
-        
+
     }
 
     100% {
@@ -115,8 +115,8 @@
         transform: rotate(0deg);
         transform: skewY(0);
         transform: skewX(0deg);
-        
-        
+
+
 
     }
 
@@ -126,7 +126,7 @@
 @keyframes expand-left-to-right {
     0% {
         width: 0vw;
-        
+
     }
 
     100% {
@@ -140,7 +140,7 @@
     0% {
         display: block;
         left: 100vw;
-        
+
     }
 
     100% {
@@ -154,7 +154,7 @@
 @keyframes exit-left-to-right {
     0% {
         left: 0vw;
-        
+
     }
 
     100% {
@@ -167,20 +167,20 @@
 
 
 @keyframes slideDown {
-    0% { 
+    0% {
          transform: translateY(-80px);
     }
-    100% { 
+    100% {
         transform: translateY(0px);
     }
   }
 
 
 @keyframes slideBackUp {
-    0% { 
+    0% {
         transform: translateY(0px);
    }
-   100% { 
+   100% {
        transform: translateY(-80px);
    }
 }
@@ -334,7 +334,7 @@ nav {
     color: white;
     text-align: center;
     animation: pan-in 2s cubic-bezier(.49,.01,0,1);
-    
+
 }
 
 .header .text h1 {
@@ -352,7 +352,7 @@ nav {
     line-height: 2;
     padding-top: 1em;
     font-weight: 400;
-    
+
 }
 
 
@@ -384,7 +384,7 @@ nav {
 .ul-links {
     position: relative;
     padding-bottom: 3px;
-    
+
 }
 
 
@@ -528,7 +528,7 @@ top: 0;
 .about-us .services {
     width: 70%;
     margin: auto;
-    margin-top: 10em;
+    margin-top: 7em;
 }
 
 
@@ -607,7 +607,7 @@ top: 0;
     text-align: center;
     line-height: 2;
     margin-top: 2em;
-    
+
 }
 
 
@@ -663,7 +663,7 @@ top: 0;
 
 
 .insights {
-    margin-top: 9em;
+    margin-top: 6em;
     width: 100vw;
     height: 440px;
     background: #EFEFEF;
@@ -698,7 +698,7 @@ top: 0;
 
 
 .team {
-    margin-top: 9em;
+    margin-top: 6em;
 }
 
 
@@ -738,7 +738,7 @@ top: 0;
 .team-wrapper .trio .photo {
     width: 110px;
     height: 110px;
-    margin: auto;   
+    margin: auto;
     margin-bottom: 2em;
     border-radius: 100%;
     background-size: cover;
@@ -938,38 +938,38 @@ footer .social-footer {
 
 
 @media screen and (max-width: 1000px) {
-    
+
         p {
             font-size: 28pt !important;
         }
-    
+
         body {
             overflow-x: hidden !important;
         }
-    
+
         .container {
             width: 900px;
         }
-    
+
         .desktop-fixed {
             display: none;
         }
-    
+
         .mobile-fixed {
             display: block;
             z-index: 9999 !important;
         }
-    
-    
+
+
         #header-tiles {
             display: none;
         }
-    
+
         .header-logo {
             width: 50px;
         }
-    
-    
+
+
         #header-iphones {
             position: absolute;
             left: -3vw;
@@ -981,12 +981,12 @@ footer .social-footer {
             animation-delay: 2.1s;
             overflow-x: hidden !important;
         }
-    
+
         .nav {
             z-index: 9999 !important;
             width: 780px;
          }
-    
+
         .nav-bg {
             z-index: 999 !important;
             background: white;
@@ -997,17 +997,17 @@ footer .social-footer {
             height: 200px;
             display: none;
         }
-    
+
         .nav .burger {
-            display: block !important; 
+            display: block !important;
             float: right;
             margin-top: 72px;
             width: 70px;
             height: 70px;
-    
+
             z-index: 9999 !important;
         }
-    
+
         .mobile-menu {
             display: none;
             background:#4C58A4;
@@ -1018,7 +1018,7 @@ footer .social-footer {
             left: 0;
             z-index: 900 !important;
         }
-    
+
         .mobile-menu ul {
             display: block;
             font-size: 60pt;
@@ -1028,7 +1028,7 @@ footer .social-footer {
             padding: 1.5em;
             list-style: none;
         }
-    
+
         .mobile-menu-bg {
             position: absolute;
             opacity: 0.26;
@@ -1036,81 +1036,81 @@ footer .social-footer {
             top: -40vh;
             left: -60vw;
         }
-    
+
         .mobile-menu ul li {
             line-height: 4;
             font-weight: 500;
         }
-    
-    
-    
+
+
+
         #top {
             width: 70px;
             height: 5px;
             background: white;
-    
+
         }
-    
+
         #bot {
             position: relative;
             top: 25px;
             width: 70px;
             height: 5px;
             background: white;
-    
+
         }
-    
+
         .header {
             height: 97vh;
         }
-    
+
         .container {
             width: 80vw;
         }
-    
+
         .nav .right {
             display: none;
         }
-    
+
         .nav {
             padding-top: 1em;
         }
-    
+
         .nav .left li {
             font-size: 35pt;
             padding-top: 45px;
         }
-    
+
         .mobile-fixed .left li {
             padding-top: 0px;
         }
-    
-    
+
+
         .mobile-fixed .burger {
             padding-top: 15px;
         }
-    
-    
+
+
         .header .text {
             width: 100%;
             position: relative;
             top: 400px;
         }
-    
+
         .header .text h1 {
             font-size: 44pt;
             width: 100%;
             position: absolute;
             width: 100%;
             margin: auto !important;
-            
+
         }
-    
-     
-    
+
+
+
         .header .text p {
             width: 90%;
-            padding-top: 8em; 
+            padding-top: 8em;
             font-size: 28pt;
         }
 
@@ -1120,27 +1120,27 @@ footer .social-footer {
             font-size: 29pt !important;
             border: 3px solid white;
         }
-    
+
         #scrolldown {
             display: none;
         }
-    
-        
+
+
         .btn {
             margin-top: 0 !important;
             width: 60% !important;
             font-size: 29pt !important;
         }
-    
 
-        .blurb { 
+
+        .blurb {
             width: 100% !important;
         }
 
 
         .blurb h2 {
             font-size: 38pt !important;
-            width: 100% !important; 
+            width: 100% !important;
             padding-top: 2em;
         }
 
@@ -1190,7 +1190,7 @@ footer .social-footer {
             justify-content: space-between;
 
         }
-        
+
 
         .service-points .tiles {
             width: 95%;
@@ -1218,7 +1218,7 @@ footer .social-footer {
 
         .startup-help h2 {
             font-size: 55pt !important;
-            
+
         }
 
 
@@ -1280,97 +1280,97 @@ footer .social-footer {
             padding-top: 1em;
             padding-bottom: 1em;
         }
-        
+
 
        .photo {
            width: 260px !important;
            height: 260px !important;
        }
 
-        
+
         .footer-links {
             display: none !important;
         }
-    
+
         .social-footer {
             display: block !important;
             justify-content: space-between;
             width: 100% !important;
-    
+
         }
-    
-        
-        .contact-center { 
+
+
+        .contact-center {
             width: 100% !important;
             display: block !important;
             height: 800px !important;
         }
-    
+
         .contact-center h1 {
             font-size: 38pt !important;
         }
-    
+
         .contact-center .hollow-btn {
             width: 35% !important;
             font-size: 29pt !important;
         }
-    
+
         #back-to-top {
             width: 140px;
             height: 140px;
             margin-top: 7em;
         }
-    
-    
+
+
         .social-footer li img {
             display: inline;
             height: 50px !important;
             width: auto;
         }
-    
+
         footer {
             height: 1200px;
         }
-    
+
         footer .container {
             display: block !important;
         }
-    
-    
+
+
         .social-footer ul {
             text-align: center;
             display: flex;
             justify-content: space-around;
         }
-    
-    
+
+
     }
-    
+
 
 
 
 @media screen and (min-width: 1800px) {
-    
-    
+
+
     .header .text {
         position: relative;
         top: 28vh;
         color: white;
-        
+
     }
 
     .header {
         height: 1200px;
     }
-    
-    
-    
-    
+
+
+
+
     #header-tiles {
         height: 2500px;
         right: -600px;
         top: -490px;
         z-index: 0;
-    
+
     }
 }

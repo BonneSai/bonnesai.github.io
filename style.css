@@ -8,7 +8,7 @@
         transform: rotate(-7deg);
         transform: skewY(-10deg);
         transform: skewX(10deg);
-        
+
     }
 
     100% {
@@ -20,8 +20,8 @@
         transform: rotate(0deg);
         transform: skewY(0);
         transform: skewX(0deg);
-        
-        
+
+
 
     }
 
@@ -77,7 +77,7 @@
         margin-top: 30px;
         transform: skewY(-5deg);
         transform: skewX(5deg);
-        
+
     }
 
     100% {
@@ -86,8 +86,8 @@
         margin-top: 0px;
         transform: skewY(0);
         transform: skewX(0deg);
-        
-        
+
+
 
     }
 
@@ -106,7 +106,7 @@
         transform: rotate(-7deg);
         transform: skewY(-10deg);
         transform: skewX(10deg);
-        
+
     }
 
     100% {
@@ -117,8 +117,8 @@
         transform: rotate(0deg);
         transform: skewY(0);
         transform: skewX(0deg);
-        
-        
+
+
 
     }
 
@@ -128,7 +128,7 @@
 @keyframes expand-left-to-right {
     0% {
         width: 0vw;
-        
+
     }
 
     100% {
@@ -142,7 +142,7 @@
     0% {
         display: block;
         left: 100vw;
-        
+
     }
 
     100% {
@@ -156,7 +156,7 @@
 @keyframes exit-left-to-right {
     0% {
         left: 0vw;
-        
+
     }
 
     100% {
@@ -169,20 +169,20 @@
 
 
 @keyframes slideDown {
-    0% { 
+    0% {
          transform: translateY(-80px);
     }
-    100% { 
+    100% {
         transform: translateY(0px);
     }
   }
 
 
 @keyframes slideBackUp {
-    0% { 
+    0% {
         transform: translateY(0px);
    }
-   100% { 
+   100% {
        transform: translateY(-80px);
    }
 }
@@ -332,7 +332,7 @@ nav {
     color: white;
     animation: pan-in 2s cubic-bezier(.49,.01,0,1);
     animation-delay: 2.1s;
-    
+
 }
 
 .header .text h1 {
@@ -340,7 +340,7 @@ nav {
     font-size: 26pt;
     font-weight: 600;
     padding-bottom: 0.2em;
-    
+
 }
 
 
@@ -348,7 +348,7 @@ nav {
     visibility: hidden;
     width: 140px;
     border: 1px solid white;
-    
+
 }
 
 
@@ -359,7 +359,7 @@ nav {
     line-height: 2;
     padding-top: 1.5em;
     font-weight: 400;
-    
+
 }
 
 
@@ -402,7 +402,7 @@ nav {
 .ul-links {
     position: relative;
     padding-bottom: 3px;
-    
+
 }
 
 
@@ -517,7 +517,7 @@ nav {
 
 .icon-wrapper {
     display: block;
-    
+
 }
 
 
@@ -537,7 +537,7 @@ nav {
 .icon-tiles {
     padding-top: 1.4em;
     width: 50%;
-  
+
 }
 
 
@@ -549,7 +549,7 @@ nav {
 
 
 .icon {
-    box-shadow: 0px 3px 7px rgba(0,0,0,0.16); 
+    box-shadow: 0px 3px 7px rgba(0,0,0,0.16);
     border-radius: 100%;
     transition: all 0.2s ease-in-out;
 }
@@ -563,7 +563,7 @@ nav {
 
 .startup-solutions {
     position: relative;
-    top: 270px;
+    top: 220px;
     text-align: center;
 }
 
@@ -579,7 +579,7 @@ nav {
 
 
 .startup-solutions .icon-point p {
-    margin: auto; 
+    margin: auto;
     margin-top: 1.3em;
     width: 70%;
 }
@@ -647,7 +647,7 @@ nav {
 
 
 
-/* 
+/*
 .pricing {
     display: block;
     width: 100vw;
@@ -731,7 +731,7 @@ nav {
 
 .why-us {
     position: relative;
-    top: 450px;
+    top: 400px;
 }
 
 
@@ -751,7 +751,7 @@ nav {
 
 .why-us .icon-point p {
     text-align: center;
-    margin: auto; 
+    margin: auto;
     margin-top: 1.3em;
     width: 70%;
 }
@@ -829,7 +829,7 @@ nav {
 footer {
     width: 100vw;
     position: relative;
-    top: 750px;
+    top: 600px;
     height: 470px;
     overflow: hidden;
     background: linear-gradient(315deg, #3995A2, #514A9D);
@@ -1051,7 +1051,7 @@ footer .social-footer {
     }
 
     .nav .burger {
-        display: block !important; 
+        display: block !important;
         float: right;
         margin-top: 72px;
         width: 70px;
@@ -1183,7 +1183,7 @@ footer .social-footer {
     }
 
     .quote p {
-        font-size: 28pt; 
+        font-size: 28pt;
         width: 100%;
         padding: 0;
     }
@@ -1227,7 +1227,7 @@ footer .social-footer {
 
 
     .services .icon-point p {
-        font-size: 28pt !important; 
+        font-size: 21pt !important;
         width: 100% !important;
     }
 
@@ -1309,33 +1309,33 @@ footer .social-footer {
         flex-wrap: wrap;
         height: 4000px !important;
     }
-    
-    
+
+
     .card {
         width: 100% !important;
         height: 1200px !important;
     }
-    
+
     .card .image {
         height: 500px !important;
     }
-    
+
     .card h2 {
         font-size: 33pt !important;
-    }   
-    
+    }
+
     .card .text p {
         width: 90% !important;
     }
-    
-    
+
+
     .btn {
         margin-top: 0 !important;
         width: 60% !important;
         font-size: 29pt !important;
     }
 
-    
+
     .footer-links {
         display: none !important;
     }
@@ -1365,8 +1365,8 @@ footer .social-footer {
         height: 300px;
     }
 
-    
-    .contact-center { 
+
+    .contact-center {
         width: 100% !important;
         display: block !important;
         height: 800px !important;
@@ -1388,7 +1388,7 @@ footer .social-footer {
         margin-top: 7em;
     }
 
-    
+
     #back-to-top img {
         width: 30px;
     }
@@ -1427,25 +1427,25 @@ footer .social-footer {
         position: relative;
         top: 28vh;
         color: white;
-        
+
     }
 
     .header {
         height: 1200px;
     }
-    
-    
-    
-    
+
+
+
+
     #header-tiles {
         height: 2500px;
         right: -600px;
         top: -490px;
         z-index: 0;
-    
+
     }
-    
-    
+
+
     #header-iphones {
         position: relative;
         height: 650px;
@@ -1453,8 +1453,8 @@ footer .social-footer {
         left: 370px;
         z-index: 1;
     }
-    
-    
+
+
     #scrolldown {
         height: 120px;
         position: absolute;

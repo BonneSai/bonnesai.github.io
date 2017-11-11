@@ -7,7 +7,7 @@
         transform: rotate(-7deg);
         transform: skewY(-10deg);
         transform: skewX(10deg);
-        
+
     }
 
     100% {
@@ -18,8 +18,8 @@
         transform: rotate(0deg);
         transform: skewY(0);
         transform: skewX(0deg);
-        
-        
+
+
 
     }
 
@@ -40,7 +40,7 @@
         left: 200px;
         opacity: 0;
     }
-    
+
 }
 
 
@@ -57,7 +57,7 @@
         left: 200px;
         opacity: 0;
     }
-    
+
 }
 
 
@@ -72,7 +72,7 @@
         transform: rotate(-7deg);
         transform: skewY(-10deg);
         transform: skewX(10deg);
-        
+
     }
 
     100% {
@@ -84,8 +84,8 @@
         transform: rotate(0deg);
         transform: skewY(0);
         transform: skewX(0deg);
-        
-        
+
+
 
     }
 
@@ -102,7 +102,7 @@
         transform: rotate(0deg);
         transform: skewY(0deg);
         transform: skewX(0deg);
-        
+
     }
 
     100% {
@@ -114,8 +114,8 @@
         transform: rotate(7deg);
         transform: skewY(10deg);
         transform: skewX(-10deg);
-        
-        
+
+
 
     }
 }
@@ -135,7 +135,7 @@
         top: 30px;
         transform: skewY(-5deg);
         transform: skewX(5deg);
-        
+
     }
 
     100% {
@@ -144,12 +144,96 @@
         top: 0px;
         transform: skewY(0);
         transform: skewX(0deg);
-        
-        
+
+
 
     }
 
 }
+
+@keyframes expand-right-to-left {
+    0% {
+        display: block;
+        left: 100vw;
+
+    }
+
+    100% {
+        display: block;
+        left: 0vw;
+    }
+
+}
+
+
+@keyframes exit-left-to-right {
+    0% {
+        left: 0vw;
+
+    }
+
+    100% {
+        display: none;
+        left: 100vw;
+    }
+
+}
+
+
+@keyframes top-stroke-engage {
+    0% {
+        transform: rotate(0deg);
+        top: 0px;
+    }
+
+    100% {
+        transform: rotate(45deg);
+        top: 3px;
+    }
+}
+
+@keyframes bottom-stroke-engage {
+    0% {
+        transform: rotate(0deg);
+        top: 0px;
+    }
+
+    100% {
+        transform: rotate(-45deg);
+        top: -3px;
+    }
+}
+
+
+
+@keyframes slide-from-right {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        position: relative;
+        margin-top: 100px;
+        margin-left: 100px;
+        transform: rotate(-7deg);
+        transform: skewY(-10deg);
+        transform: skewX(10deg);
+
+    }
+
+    100% {
+        opacity: 1;
+        position: relative;
+        margin-top: 0px;
+        margin-left: 0px;
+        transform: rotate(0deg);
+        transform: skewY(0);
+        transform: skewX(0deg);
+
+
+
+    }
+
+}
+
 
 
 body {
@@ -197,7 +281,7 @@ body {
 
   input::-webkit-input-placeholder {
       color: white;
-      
+
   }
 
   a:link {
@@ -312,7 +396,7 @@ p {
 a {
     color: white;
     text-decoration: none;
-    z-index: 1000 !important;
+    z-index: 1000;
 }
 
 nav {
@@ -371,7 +455,7 @@ nav {
 .ul-links {
     position: relative;
     padding-bottom: 3px;
-    
+
 }
 
 
@@ -405,7 +489,7 @@ nav {
     position: relative;
     top: 50%;
     transform: translateY(-70%);
-    
+
 }
 
 
@@ -441,7 +525,7 @@ nav {
     animation: pan-in-faded 2s cubic-bezier(0.19, 1, 0.22, 1);
     animation-delay: 0.4s;
     visibility: hidden;
-    
+
   }
 
 
@@ -462,7 +546,7 @@ nav {
     color: white;
     visibility: hidden;
   }
-  
+
   .two .line-input {
     width: auto;
     font-size: 26pt;
@@ -488,7 +572,7 @@ nav {
     color: white;
     visibility: hidden;
   }
-  
+
   .three .line-input {
     width: auto;
     font-size: 26pt;
@@ -512,7 +596,7 @@ nav {
     color: white;
     visibility: hidden;
   }
-  
+
   .four .line-input {
     width: auto;
     font-size: 26pt;
@@ -539,7 +623,7 @@ nav {
     color: white;
     visibility: hidden;
   }
-  
+
   .five .line-input {
     width: 600px;
     font-size: 26pt;
@@ -564,8 +648,8 @@ nav {
     color: white;
     visibility: hidden;
   }
-  
-  .sent p {  
+
+  .sent p {
     font-size: 16pt;
     font-weight: 400;
     display: block;
@@ -581,7 +665,7 @@ nav {
   }
 
 
-    
+
 
     #null-prompt {
         color: white;
@@ -591,7 +675,7 @@ nav {
         display: none;
     }
 
-   
+
 
 
 
@@ -650,7 +734,7 @@ nav {
     }
 
     .nav .burger {
-        display: block !important; 
+        display: block !important;
         float: right;
         margin-top: 72px;
         width: 70px;
@@ -754,14 +838,14 @@ nav {
         position: absolute;
         width: 100%;
         margin: auto !important;
-        
+
     }
 
- 
+
 
     .header .text p {
         width: 90%;
-        padding-top: 8em; 
+        padding-top: 8em;
         font-size: 28pt;
     }
 
@@ -770,6 +854,7 @@ nav {
         width: 35% !important;
         font-size: 29pt !important;
         border: 3px solid white;
+        z-index: -999 !important;
     }
 
 
@@ -799,7 +884,7 @@ nav {
     }
 
 
-    .controls { 
+    .controls {
         top: 550px;
     }
 
@@ -832,7 +917,7 @@ nav {
         top: -50vh;
         left: 55vw;
     }
-   
+
     #header-iphones {
         width: 1200px;
 
