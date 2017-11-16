@@ -188,6 +188,12 @@
 }
 
 
+@font-face {
+    font-family: 'Avenir';
+    src: url('Avenir-Medium.ttf')format('truetype'),;
+}
+
+
 
 .nav-slideDown {
     animation: slideDown .3s cubic-bezier(.49,.01,0,1);
