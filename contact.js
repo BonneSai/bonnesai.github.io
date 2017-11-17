@@ -78,14 +78,14 @@ $(document).ready(function() {
 			var nameInput = $('#name').val()
 			$('input[name="name"]').val(nameInput);
 			$('#null-prompt').fadeOut();
-			$('.one h2').css('animation', 'send-off 1.3s cubic-bezier(.59,-0.38,0,1)');
-			$('.one .line-input').css('animation', 'send-off-faded 1.3s cubic-bezier(.59,-0.38,0,1)');
+			$('.one h2').css('animation', 'send-off 0.8s cubic-bezier(.59,-0.38,0,1)');
+			$('.one .line-input').css('animation', 'send-off-faded 0.8s cubic-bezier(.59,-0.38,0,1)');
 			$('.name-controls #next1').fadeOut();
 
 
 			setTimeout(function() {
 				hideInput();
-			}, 1200);
+			}, 700);
 
 
 			function hideInput() {
@@ -114,14 +114,14 @@ $(document).ready(function() {
 			var companyInput = $('#company').val()
 			$('input[name="company"]').val(companyInput);
 			$('.company-controls #null-prompt').fadeOut();
-			$('.two h2').css('animation', 'send-off 1.3s cubic-bezier(.59,-0.38,0,1)');
-			$('.two .line-input').css('animation', 'send-off-faded 1.3s cubic-bezier(.59,-0.38,0,1)');
+			$('.two h2').css('animation', 'send-off 0.8s cubic-bezier(.59,-0.38,0,1)');
+			$('.two .line-input').css('animation', 'send-off-faded 0.8s cubic-bezier(.59,-0.38,0,1)');
 			$('.company-controls #next2').fadeOut();
 
 
 			setTimeout(function() {
 				hideInput2();
-			}, 1200);
+			}, 700);
 
 
 			function hideInput2() {
@@ -149,14 +149,14 @@ $(document).ready(function() {
 			var emailInput = $('#email').val()
 			$('input[name="_replyTo"]').val(emailInput);
 			$('.email-controls #null-prompt').fadeOut();
-			$('.three h2').css('animation', 'send-off 1.3s cubic-bezier(.59,-0.38,0,1)');
-			$('.three .line-input').css('animation', 'send-off-faded 1.3s cubic-bezier(.59,-0.38,0,1)');
+			$('.three h2').css('animation', 'send-off 0.8s cubic-bezier(.59,-0.38,0,1)');
+			$('.three .line-input').css('animation', 'send-off-faded 0.8s cubic-bezier(.59,-0.38,0,1)');
 			$('.email-controls #next3').fadeOut();
 
 
 			setTimeout(function() {
 				hideInput2();
-			}, 1200);
+			}, 700);
 
 
 			function hideInput2() {
@@ -181,13 +181,13 @@ $(document).ready(function() {
 		var budgetInput = $('#budget').val()
 		$('input[name="budget"]').val(budgetInput);
 		$('.budget-controls').children().fadeOut();
-		$('.four h2').css('animation', 'send-off 1.3s cubic-bezier(.59,-0.38,0,1)');
-		$('.four .line-input').css('animation', 'send-off-faded 1.3s cubic-bezier(.59,-0.38,0,1)');
+		$('.four h2').css('animation', 'send-off 0.8s cubic-bezier(.59,-0.38,0,1)');
+		$('.four .line-input').css('animation', 'send-off-faded 0.8s cubic-bezier(.59,-0.38,0,1)');
 
 
 		setTimeout(function() {
 			hideInput2();
-		}, 1200);
+		}, 700);
 
 
 		function hideInput2() {
@@ -212,14 +212,14 @@ $(document).ready(function() {
 			var aboutInput = $('#about').val()
 			$('input[name="about"]').val(aboutInput);
 			$('.about-controls #null-prompt').fadeOut();
-			$('.five h2').css('animation', 'send-off 1.3s cubic-bezier(.59,-0.38,0,1)');
-			$('.five .line-input').css('animation', 'send-off-faded 1.3s cubic-bezier(.59,-0.38,0,1)');
+			$('.five h2').css('animation', 'send-off 0.8s cubic-bezier(.59,-0.38,0,1)');
+			$('.five .line-input').css('animation', 'send-off-faded 0.8s cubic-bezier(.59,-0.38,0,1)');
 			$('.about-controls #next5').fadeOut();
 
 
 			setTimeout(function() {
 				hideInput2();
-			}, 1200);
+			}, 700);
 
 
 			function hideInput2() {

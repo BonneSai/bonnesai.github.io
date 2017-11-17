@@ -187,6 +187,9 @@
 
 
 
+
+
+
 .nav-slideDown {
     animation: slideDown .3s cubic-bezier(.49,.01,0,1);
 }
@@ -199,10 +202,28 @@
 
 
 
+@font-face {
+    font-family: 'Avenir-Medium';
+    src: url('Avenir-Medium.ttf')format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Avenir-Book';
+    src: url('Avenir-Book.ttf')format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('Avenir-Light.ttf')format('truetype');
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Avenir';
     line-height: 2;
     -webkit-font-smoothing: antialiased;
 }
@@ -251,6 +272,15 @@ nav {
 }
 
 
+.ul-links {
+    font-family: "Avenir-Light";
+}
+
+
+.btn {
+    font-family: "Avenir-Book";
+}
+
 
 .left {
     display: inline-block;
@@ -296,10 +326,16 @@ nav {
 
 }
 
+
+.left a {
+    font-family: "Avenir-Medium";
+}
+
 #logo-text {
     position: relative;
     top: 2px;
-    font-weight: 500;
+    font-weight: 200;
+    font-family: "Avenir-Medium";
 }
 
 .nav-bg ul {
@@ -343,6 +379,7 @@ nav {
     font-size: 28pt;
     font-weight: 500;
     padding-bottom: 0.2em;
+    font-family: "Avenir-Medium";
 }
 
 
@@ -352,6 +389,8 @@ nav {
     line-height: 2;
     padding-top: 1em;
     font-weight: 400;
+    font-size: 13pt;
+    font-family: "Avenir-Book";
 
 }
 
@@ -429,6 +468,7 @@ nav {
     background: none;
     z-index: 1 !important;
     cursor: pointer;
+    font-family: "Avenir-Book";
     transition:         0.08s ease-in;
     -o-transition:      0.08s ease-in;
     -ms-transition:     0.08s ease-in;
@@ -479,6 +519,7 @@ top: 0;
     font-size: 20pt;
     padding-bottom: 1em;
     text-align: center;
+    font-family: "Avenir-Medium";
 }
 
 
@@ -489,6 +530,7 @@ top: 0;
     text-align: center;
     width: 600px;
     padding-bottom: 1.5em;
+    font-family: "Avenir-Book";
 }
 
 
@@ -507,6 +549,7 @@ top: 0;
     padding-bottom: 1em;
     text-align: center;
     padding-top: 2em;
+    font-family: "Avenir-Medium";
 }
 
 
@@ -538,6 +581,7 @@ top: 0;
     font-size: 22pt;
     padding-bottom: 1em;
     text-align: center;
+    font-family: "Avenir-Medium";
 }
 
 
@@ -547,6 +591,7 @@ top: 0;
     text-align: center;
     width: 600px;
     padding-bottom: 1.5em;
+    font-family: "Avenir-Book";
 }
 
 
@@ -617,6 +662,12 @@ top: 0;
     font-size: 13.5pt;
     padding-bottom: 1.5em;
     text-align: center;
+    font-family: "Avenir-Medium";
+}
+
+
+.tiles .text p {
+    font-family: "Avenir-Book";
 }
 
 
@@ -634,7 +685,12 @@ top: 0;
     color: #4e4e4e;
     font-size: 22pt;
     padding-bottom: 1em;
+    font-family: "Avenir-Medium";
+}
 
+
+.startup-help p {
+    font-family: "Avenir-Book";
 }
 
 
@@ -659,6 +715,7 @@ top: 0;
     color: #4e4e4e;
     font-size: 16.5pt;
     padding-bottom: 1.5em;
+    font-family: "Avenir-Medium";
 }
 
 
@@ -677,6 +734,7 @@ top: 0;
     color: #4e4e4e;
     font-size: 22pt;
     padding-bottom: 1em;
+    font-family: "Avenir-Medium";
 }
 
 
@@ -709,6 +767,7 @@ top: 0;
     color: #4e4e4e;
     font-size: 22pt;
     padding-bottom: 3em;
+    font-family: "Avenir-Medium";
 }
 
 
@@ -733,6 +792,7 @@ top: 0;
 .team-wrapper .trio h3 {
     font-size: 16pt;
     padding-bottom: 1em;
+    font-family: "Avenir-Medium";
 }
 
 .team-wrapper .trio .photo {
@@ -743,6 +803,11 @@ top: 0;
     border-radius: 100%;
     background-size: cover;
     background-position: center;
+}
+
+
+.team-wrapper .trio p {
+    font-family: "Avenir-Book";
 }
 
 
@@ -793,10 +858,12 @@ footer .footer-links {
 }
 
 
+
 .footer-links li {
     line-height: 5.2;
     list-style: none;
     transition: all 0.2s ease-in-out;
+    font-family: "Avenir-Book";
 }
 
 
@@ -818,8 +885,9 @@ footer .contact-center {
     text-align: center;
     margin-top: 1.2em;
     font-size: 22pt;
-    font-weight: 400;
+    font-weight: 500;
     color: white;
+    font-family: "Avenir-Medium";
 }
 
 
