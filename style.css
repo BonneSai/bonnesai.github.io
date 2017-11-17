@@ -125,18 +125,6 @@
 }
 
 
-@keyframes expand-left-to-right {
-    0% {
-        width: 0vw;
-
-    }
-
-    100% {
-        width: 100vw;
-    }
-
-}
-
 
 @keyframes expand-right-to-left {
     0% {
@@ -352,7 +340,6 @@ nav {
     width: 100vw;
     height: 740px;
     background: linear-gradient(300deg, #00E1FF, #473CC6);
-    animation: expand-left-to-right 1.5s cubic-bezier(.92,.07,0,1);
 }
 
 
@@ -362,7 +349,7 @@ nav {
     top: 170px;
     color: white;
     animation: pan-in 2s cubic-bezier(.49,.01,0,1);
-    animation-delay: 2.1s;
+    animation-delay: 0.2s;
 
 }
 
@@ -412,7 +399,7 @@ nav {
     left: 480px;
     z-index: 1;
     animation: slide-from-right 2s cubic-bezier(.49,.01,0,1);
-    animation-delay: 2.1s;
+    animation-delay: 0.2s;
 }
 
 
@@ -1079,7 +1066,7 @@ footer .social-footer {
         height: auto;
         margin: auto;
         animation: fade-in 1s ease-in-out;
-        animation-delay: 2.1s;
+        animation-delay: 0.2s;
         overflow-x: hidden !important;
     }
 
