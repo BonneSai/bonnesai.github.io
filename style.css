@@ -274,6 +274,7 @@ nav {
 
 .nav-bg ul li a {
     color: black;
+    
 
 }
 
@@ -1128,6 +1129,7 @@ footer .social-footer {
     .mobile-menu ul li {
         line-height: 4;
         font-weight: 500;
+        font-family: "Avenir-Medium" !important;
     }
 
 
@@ -1181,12 +1183,12 @@ footer .social-footer {
 
     .header .text {
         position: relative;
-        top: 220px;
+        top: 370px;
     }
 
     .header .text h1 {
-        font-size: 44pt;
-        padding-bottom: 0.3em;
+        font-size: 60pt;
+        padding-bottom: 1em;
         font-weight: 500;
     }
 
@@ -1198,11 +1200,16 @@ footer .social-footer {
 
     .header .text p {
         width: 100%;
-        padding-top: 1em;
-        font-size: 28pt;
+        padding-top: 2em;
+        font-size: 33pt !important;
     }
 
     #scrolldown {
+        display: none;
+    }
+
+
+    #header-iphones {
         display: none;
     }
 

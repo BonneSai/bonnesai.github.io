@@ -800,6 +800,7 @@ nav {
     .mobile-menu ul li {
         line-height: 4;
         font-weight: 500;
+        font-family: "Avenir-Medium" !important;
     }
 
 
