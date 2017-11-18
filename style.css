@@ -1187,9 +1187,10 @@ footer .social-footer {
     }
 
     .header .text h1 {
-        font-size: 55pt;
+        font-size: 48pt;
         padding-bottom: 0.3em;
         font-weight: 500;
+        width: 130%;
     }
 
     .header .text hr {
@@ -1207,7 +1208,6 @@ footer .social-footer {
     #scrolldown {
         display: none;
     }
-
 
 
     .quote {
