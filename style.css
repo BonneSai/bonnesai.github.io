@@ -1183,12 +1183,12 @@ footer .social-footer {
 
     .header .text {
         position: relative;
-        top: 370px;
+        top: 220px;
     }
 
     .header .text h1 {
-        font-size: 60pt;
-        padding-bottom: 1em;
+        font-size: 55pt;
+        padding-bottom: 0.3em;
         font-weight: 500;
     }
 
@@ -1200,18 +1200,14 @@ footer .social-footer {
 
     .header .text p {
         width: 100%;
-        padding-top: 2em;
-        font-size: 33pt !important;
+        padding-top: 1em;
+        font-size: 28pt;
     }
 
     #scrolldown {
         display: none;
     }
 
-
-    #header-iphones {
-        display: none;
-    }
 
 
     .quote {
