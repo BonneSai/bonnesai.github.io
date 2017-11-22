@@ -609,6 +609,7 @@ nav {
 .startup-solutions .icon-point p {
     margin: auto;
     margin-top: 1.3em;
+    font-size: 1.3rem !important;
     width: 73%;
     line-height: 2.4 !important;
     font-family: "Avenir-Book";
@@ -1035,7 +1036,9 @@ footer .social-footer {
         font-size: 1rem !important;
     }
 
-    body {
+
+
+    body, html {
       width: 100vw !important;
       overflow-x: hidden !important;
     }
@@ -1073,7 +1076,8 @@ footer .social-footer {
         margin: auto;
         animation: fade-in 1s ease-in-out;
         animation-delay: 0.2s;
-        overflow-x: hidden !important;
+        overflow: hidden !important;
+        background: pink;
     }
 
     .nav {
@@ -1313,7 +1317,7 @@ footer .social-footer {
     }
 
     .startup-solutions .icon-point p {
-        font-size: 0.9rem !important;
+        font-size: 1rem !important;
         width: 100% !important;
     }
 
