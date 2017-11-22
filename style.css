@@ -1069,9 +1069,9 @@ footer .social-footer {
 
     #header-iphones {
         position: relative;
-        left: -10vw;
+        left: -6vw;
         top: 140px;
-        width: 100vw;
+        width: 95vw;
         height: auto;
         margin: auto;
         animation: fade-in 1s ease-in-out;
