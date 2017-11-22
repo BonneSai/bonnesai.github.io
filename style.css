@@ -274,7 +274,8 @@ nav {
 
 .nav-bg ul li a {
     color: black;
-    
+    font-family: "Avenir-Medium";
+
 
 }
 
@@ -283,7 +284,7 @@ nav {
     top: 2px;
     font-weight: 200;
     font-family: "Avenir-Medium";
-    
+
 }
 
 .left a {
