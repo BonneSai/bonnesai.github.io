@@ -1038,7 +1038,7 @@ footer .social-footer {
 
 
 
-    body, html {
+    body {
       width: 100vw !important;
       overflow-x: hidden !important;
     }
@@ -1069,15 +1069,14 @@ footer .social-footer {
 
     #header-iphones {
         position: relative;
-        left: -10vw;
-        top: 140px;
-        width: 100vw;
+        left: -6vw;
+        top: 160px;
+        width: 95vw;
         height: auto;
         margin: auto;
         animation: fade-in 1s ease-in-out;
         animation-delay: 0.2s;
         overflow: hidden !important;
-        background: pink;
     }
 
     .nav {
