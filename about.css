@@ -29,12 +29,12 @@
 @keyframes top-stroke-engage {
     0% {
         transform: rotate(0deg);
-        top: 0px;
+        top: 3px;
     }
 
     100% {
         transform: rotate(45deg);
-        top: 3px;
+        top: 1px;
     }
 }
 
@@ -46,10 +46,9 @@
 
     100% {
         transform: rotate(-45deg);
-        top: -3px;
+        top: -1px;
     }
 }
-
 
 
 
@@ -1005,18 +1004,19 @@ footer .social-footer {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 667px) {
 
         p {
-            font-size: 28pt !important;
+            font-size: 1rem !important;
         }
 
         body {
+            width: 100vw !important;
             overflow-x: hidden !important;
         }
 
         .container {
-            width: 900px;
+            width: 83vw;
         }
 
         .desktop-fixed {
@@ -1034,21 +1034,11 @@ footer .social-footer {
         }
 
         .header-logo {
-            width: 50px;
+            width: 25px;
         }
 
 
-        #header-iphones {
-            position: absolute;
-            left: -3vw;
-            top: 58vh;
-            width: 100vw;
-            height: auto;
-            margin: auto;
-            animation: fade-in 1s ease-in-out;
-            animation-delay: 2.1s;
-            overflow-x: hidden !important;
-        }
+
 
         .nav {
             z-index: 9999 !important;
@@ -1062,18 +1052,17 @@ footer .social-footer {
             top: 0;
             left: 0;
             width: 100vw;
-            height: 200px;
+            height: 80px;
             display: none;
         }
 
         .nav .burger {
-            display: block !important;
-            float: right;
-            margin-top: 72px;
-            width: 70px;
-            height: 70px;
-
-            z-index: 9999 !important;
+          display: block !important;
+          float: right;
+          margin-top: 20px;
+          width: 35px;
+          height: auto;
+          z-index: 9999 !important;
         }
 
         .mobile-menu {
@@ -1088,13 +1077,13 @@ footer .social-footer {
         }
 
         .mobile-menu ul {
-            display: block;
-            font-size: 60pt;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            padding: 1.5em;
-            list-style: none;
+          display: block;
+          font-size: 2rem;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: 1.5em;
+          list-style: none;
         }
 
         .mobile-menu-bg {
@@ -1114,23 +1103,27 @@ footer .social-footer {
 
 
         #top {
-            width: 70px;
-            height: 5px;
+            width: 27px;
+            height: 2px;
             background: white;
+            right: 0;
+
 
         }
 
         #bot {
             position: relative;
-            top: 25px;
-            width: 70px;
-            height: 5px;
+            top: 13px;
+            width: 27px;
+            height: 2px;
             background: white;
+
 
         }
 
+
         .header {
-            height: 97vh;
+            height: 650px;
         }
 
         .container {
@@ -1146,32 +1139,30 @@ footer .social-footer {
         }
 
         .nav .left li {
-            font-size: 35pt;
-            padding-top: 45px;
+          font-size: 1.3rem;
+          padding-top: 10px;
         }
 
         .mobile-fixed .left li {
-            padding-top: 0px;
+
         }
 
 
         .mobile-fixed .burger {
-            padding-top: 15px;
+            padding-top: 20px;
         }
 
 
         .header .text {
             width: 100%;
             position: relative;
-            top: 400px;
+            top: 110px;
         }
 
         .header .text h1 {
-            font-size: 44pt;
-            width: 100%;
-            position: absolute;
-            width: 100%;
-            margin: auto !important;
+          font-size: 1.6rem;
+          padding-bottom: 0.5em;
+          font-weight: 500;
 
         }
 
@@ -1179,8 +1170,8 @@ footer .social-footer {
 
         .header .text p {
             width: 90%;
-            padding-top: 8em;
-            font-size: 28pt;
+            
+            font-size: 1rem;
         }
 
 
