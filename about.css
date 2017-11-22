@@ -1042,7 +1042,7 @@ footer .social-footer {
 
         .nav {
             z-index: 9999 !important;
-            width: 780px;
+            width: 100%;
          }
 
         .nav-bg {
@@ -1126,9 +1126,6 @@ footer .social-footer {
             height: 650px;
         }
 
-        .container {
-            width: 80vw;
-        }
 
         .nav .right {
             display: none;
@@ -1156,7 +1153,7 @@ footer .social-footer {
         .header .text {
             width: 100%;
             position: relative;
-            top: 110px;
+            top: 150px;
         }
 
         .header .text h1 {
@@ -1170,15 +1167,14 @@ footer .social-footer {
 
         .header .text p {
             width: 90%;
-            
             font-size: 1rem;
         }
 
 
         .header .text .hollow-btn {
             width: 35% !important;
-            font-size: 29pt !important;
-            border: 3px solid white;
+            font-size: 1rem;
+            border: 1.2px solid white;
         }
 
         #scrolldown {
@@ -1189,7 +1185,7 @@ footer .social-footer {
         .btn {
             margin-top: 0 !important;
             width: 60% !important;
-            font-size: 29pt !important;
+            font-size: 1rem;
         }
 
 
@@ -1199,36 +1195,39 @@ footer .social-footer {
 
 
         .blurb h2 {
-            font-size: 38pt !important;
+            font-size: 1.4rem !important;
             width: 100% !important;
-            padding-top: 2em;
+
         }
 
 
 
         .blurb p {
             width: 100% !important;
+            font-size: 1rem;
         }
 
 
         .blurb hr {
-            height: 200px;
+            height: 100px;
         }
 
 
         .vision h2 {
-            font-size: 44pt !important;
+            font-size: 1.5rem !important;
+            width: 100%;
         }
 
 
         .about-us .services {
             width: 100%;
+            margin-top: 5em;
         }
 
 
 
         .services h2 {
-            font-size: 55pt !important
+            font-size: 1.5rem !important;
         }
 
 
@@ -1238,7 +1237,7 @@ footer .social-footer {
         }
 
         .services hr {
-            height: 200px;
+            height: 100px;
         }
 
 
@@ -1246,38 +1245,49 @@ footer .social-footer {
         .service-points {
             display: flex;
             flex-wrap: wrap;
-            height: 4180px !important;
+            height: 1600px !important;
             justify-content: space-between;
 
+        }
+
+        .service-points .wrapper {
+          width: 90vw;
+        }
+
+
+        .services-bg {
+          padding-top: 2em;
         }
 
 
         .service-points .tiles {
             width: 95%;
             margin: auto;
-            margin-top: 120px;
-            height: 800px;
-            padding-top: 3em;
+            margin-top: 20px;
+            height: 360px;
+
         }
 
 
         .service-points .tiles h3 {
-            font-size: 33pt !important;
+            font-size: 1.3rem;
         }
 
 
         .service-points img {
-            width: 210px;
+            width: 80px;
+            margin-top: 2.5em;
         }
 
 
         .startup-help {
-            height: 2900px;
+            height: 1000px;
+            margin-top: 90px;
         }
 
 
         .startup-help h2 {
-            font-size: 55pt !important;
+            font-size: 1.5rem !important;
 
         }
 
@@ -1289,26 +1299,32 @@ footer .social-footer {
 
 
 
+        .startup-help .text-wrapper {
+          height: auto;
+          margin-top: 0;
+        }
+
+
+
         .trio {
             width: 100% !important;
-            margin-top: 5em;
         }
 
 
 
         .trio h3 {
-            font-size: 44pt !important;
+            font-size: 1.3rem !important;
         }
 
 
 
         .insights {
-            height: 1700px;
+            height: 700px;
         }
 
 
         .insights h2 {
-            font-size: 44pt !important;
+            font-size: 1.5rem !important;
         }
 
 
@@ -1316,93 +1332,102 @@ footer .social-footer {
         .logo-container {
             flex-wrap: wrap;
             justify-content: space-around !important;
-            height: 900px;
+            height: 400px;
+            margin-top: 0 !important;
             width: 100% !important;
 
         }
 
 
         .logo-container img {
-            height: 120px !important;
-            padding: 5em;
+            height: 50px !important;
+            padding: 3em;
         }
 
 
 
         .team {
-            height: 3000px;
+            height: 1180px;
         }
 
 
 
         .team h2 {
-            font-size: 55pt;
-            padding-top: 1em;
+            font-size: 1.7rem;
             padding-bottom: 1em;
         }
 
 
        .photo {
-           width: 260px !important;
-           height: 260px !important;
+           width: 120px !important;
+           height: 120px !important;
+       }
+
+       .footer-links {
+           display: none !important;
+       }
+
+       .social-footer {
+           top: 0 !important;
+           display: block !important;
+           justify-content: space-between;
+           width: 100% !important;
+
        }
 
 
-        .footer-links {
-            display: none !important;
-        }
+       .contact-center {
+           width: 100% !important;
+           display: block !important;
+           height: 380px !important;
+           padding-top: 2em;
+       }
 
-        .social-footer {
-            display: block !important;
-            justify-content: space-between;
-            width: 100% !important;
+       .contact-center h1 {
+           font-size: 1.5rem !important;
+       }
 
-        }
+       .contact-center .hollow-btn {
+           width: 35% !important;
+           border: 1.5px solid white;
+           font-size: 1.2rem !important;
+       }
 
-
-        .contact-center {
-            width: 100% !important;
-            display: block !important;
-            height: 800px !important;
-        }
-
-        .contact-center h1 {
-            font-size: 38pt !important;
-        }
-
-        .contact-center .hollow-btn {
-            width: 35% !important;
-            font-size: 29pt !important;
-        }
-
-        #back-to-top {
-            width: 140px;
-            height: 140px;
-            margin-top: 7em;
-        }
+       #back-to-top {
+           width: 60px;
+           height: 60px;
+       }
 
 
-        .social-footer li img {
-            display: inline;
-            height: 50px !important;
-            width: auto;
-        }
-
-        footer {
-            height: 1200px;
-        }
-
-        footer .container {
-            display: block !important;
-        }
+       #back-to-top img {
+           width: 18px;
+       }
 
 
-        .social-footer ul {
-            text-align: center;
-            display: flex;
-            justify-content: space-around;
-        }
+       .social-footer li img {
+           display: inline;
+           height: 25px !important;
+           width: auto;
+       }
 
+       footer {
+           height: 520px;
+           top: 380px !important;
+       }
+
+       footer .container {
+         height: auto !important;
+           display: block !important;
+       }
+
+
+       .social-footer ul {
+         padding-top: 1.5em;
+           text-align: center;
+           display: flex;
+           justify-content: space-around;
+           height: 40px;
+       }
 
     }
 
