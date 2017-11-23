@@ -17,8 +17,8 @@ $(document).ready(function() {
 			$('.header-logo').attr('src', 'assets/icons/bonnesailogo.svg');
 
 			setTimeout(function() {
-				$('#top').css('transform', 'rotate(45deg)').css('position', 'relative').css('top', '3px');
-				$('#bot').css('transform', 'rotate(-45deg)').css('position', 'relative').css('top', '-3px');
+				$('#top').css('transform', 'rotate(45deg)').css('position', 'relative').css('top', '1px');
+				$('#bot').css('transform', 'rotate(-45deg)').css('position', 'relative').css('top', '-1px');
 			}, 700);
 
 			$('.mobile-menu').css('display', 'block').css('animation', 'expand-right-to-left 0.5s cubic-bezier(.49,.01,0,1)');

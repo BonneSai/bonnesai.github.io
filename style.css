@@ -1146,9 +1146,8 @@ footer .social-footer {
         height: 2px;
         background: white;
         right: 0;
-
-
     }
+
 
     #bot {
         position: relative;
@@ -1178,9 +1177,7 @@ footer .social-footer {
         padding-top: 10px;
     }
 
-    .mobile-fixed .left li {
 
-    }
 
 
     .mobile-fixed .burger {
@@ -1192,6 +1189,7 @@ footer .social-footer {
         position: relative;
         top: 110px;
     }
+    
 
     .header .text h1 {
         font-size: 1.6rem;
