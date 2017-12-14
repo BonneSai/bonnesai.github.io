@@ -496,7 +496,7 @@ nav {
 .whatwedo h1 {
     font-weight: 500;
     color: #4e4e4e;
-    font-size: 25pt;
+    font-size: 30px;
     padding-bottom: 1em;
     font-family: "Avenir-Medium" !important;
 }
@@ -551,7 +551,7 @@ nav {
 .icon-wrapper h2 {
     display: inline;
     position: relative;
-    font-size: 22pt;
+    font-size: 25px;
     font-weight: 500;
     color: #4e4e4e;
     font-family: "Avenir-Medium" !important;
@@ -600,7 +600,7 @@ nav {
 .startup-solutions .icon-point h2 {
     font-weight: 500;
     color: #4e4e4e;
-    font-size: 22pt;
+    font-size: 28px;
     margin: auto;
     display: block;
     font-family: "Avenir-Medium" !important;
@@ -629,7 +629,7 @@ nav {
     margin-top: 2em;
     font-weight: 500;
     color: #4e4e4e;
-    font-size: 22pt;
+    font-size: 25px;
     font-family: "Avenir-Medium" !important;
 }
 
@@ -775,7 +775,7 @@ nav {
     text-align: center;
     font-weight: 500;
     color: #4e4e4e;
-    font-size: 25pt;
+    font-size: 30px;
     padding-top: 1em;
     margin: auto;
     display: block;
@@ -798,15 +798,24 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
+}
+
+
+.why-us-bg {
+    padding-top: 5em;
+    width: 100vw;
+    height: 720px;
+    background: #F7F7F7;
 }
 
 
 .card {
     width: 30%;
-    height: 540px;
+    height: 500px;
     background: white;
-    border-radius: 7px;
-    box-shadow: 0px 7px 15px rgba(0,0,0, 0.10);
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px rgba(0,0,0, 0.10);
     text-align: center;
 }
 
@@ -836,7 +845,7 @@ nav {
 
 
 .card .text h2 {
-    font-size: 14pt;
+    font-size: 18px;
     color: #4e4e4e;
     margin-top: 2em;
     font-weight: 500;
@@ -849,7 +858,7 @@ nav {
     line-height: 2;
     margin-top: 1.4em;
     width: 84%;
-    font-size: 11pt;
+    font-size: 14px !important;
     font-family: "Avenir-Book";
 }
 
@@ -868,7 +877,7 @@ nav {
 footer {
     width: 100vw;
     position: relative;
-    top: 600px;
+    top: 400px;
     height: 430px;
     overflow: hidden;
     background: linear-gradient(315deg, #3995A2, #514A9D);
@@ -1387,6 +1396,10 @@ footer .social-footer {
     }
 
 
+    .why-us-bg {
+        height: 1750px;
+    }
+
     .card {
         width: 100% !important;
         height: 480px !important;
@@ -1480,7 +1493,7 @@ footer .social-footer {
 
     footer {
         height: 520px;
-        top: 200px !important;
+        top: 100px !important;
     }
 
     footer .container {
