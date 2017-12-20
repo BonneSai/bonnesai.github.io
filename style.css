@@ -531,6 +531,8 @@ nav {
 }
 
 
+
+
 .whatwedo .icon-point p {
     display: block;
     float: left;
@@ -547,6 +549,22 @@ nav {
 
 }
 
+
+.icon-wrapper img {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.12);
+    margin-right: 1em;
+    border-radius: 100vw;
+    vertical-align: middle;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+
+.icon-wrapper img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.16);
+}
 
 .icon-wrapper h2 {
     display: inline;
@@ -576,23 +594,28 @@ nav {
 }
 
 
-.icon {
-    box-shadow: 0px 3px 7px rgba(0,0,0,0.16);
-    border-radius: 100%;
-    transition: all 0.2s ease-in-out;
-}
 
-.icon:hover {
-    box-shadow: 0px 6px 15px rgba(0,0,0, 0.16);
-}
 
 
 
 
 .startup-solutions {
     position: relative;
-    top: 220px;
+    top: 250px;
     text-align: center;
+}
+
+
+.startup-solutions .icon-point img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.12);
+    margin: auto;
+    margin-bottom: 2em;
+    border-radius: 100vw;
+    vertical-align: middle;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 
@@ -621,7 +644,7 @@ nav {
 
 .services-list {
     position: relative;
-    top: 290px;
+    top: 250px;
 }
 
 
@@ -681,86 +704,384 @@ nav {
 
 
 
-/*
-.pricing {
-    display: block;
-    width: 100vw;
+
+/* This is the start of the testimonials CSS */
+
+.testimonials {
     height: 600px;
-    background: linear-gradient(200deg, #D1E7FD, #F2E7FD);
+    display: block;
     position: relative;
-    top: 420px;
-    overflow: hidden;
+    top: 250px;
+    margin-bottom: 5em;
 }
 
 
-.pricing .left-tile {
-    width: 60vw;
-    height: 200vh;
-    position: absolute;
-    background: linear-gradient(300deg, #00E1FF, #473CC6);
-    transform: rotate(30deg);
-    opacity: 0.7;
-    border-radius: 100px;
-    top: -15vh;
-    left: -30vw;
-    z-index: 1 !important;
+.testimonial-container {
+    background: linear-gradient(315deg, #3995A2, #514A9D);
+    width: 100%;
+    position: static;
+}
+
+.cd-testimonials-wrapper {
+	width: 100%;
+    max-width: 100%;
+    height: 450px;
+	margin: 0 auto;
+	background: none;
+	-webkit-font-smoothing: antialiased;
+    padding-top: 50px !important;
+    z-index: 1;
+    position: static;
+
 }
 
 
-.pricing .right-tile {
-    width: 800px;
-    height: 800px;
-    position: absolute;
-    background: linear-gradient(300deg, #00E1FF, #473CC6);
-    transform: rotate(30deg);
-    border-radius: 80px;
-    opacity: 0.7;
-    bottom: -55vh;
-    right: -15vw;
-    z-index: 1 !important;
+a.flex-next, a.flex-prev {
+    display: none !important;
 }
 
-
-#phone-trio {
-    width: auto;
-    height: 770px;
-    position: absolute;
-    transform: rotate(30deg);
-    z-index: 1000 !important;
-    right: -20vw;
-    top: 35vh;
+@media only screen and (min-width: 768px) {
+	.cd-testimonials-wrapper {
+		padding: 100px 0px 60px;
+	}
+	
 }
 
+.testimonial-content {
+	max-width: 1000px;
+	width: 80%;
+    margin: 0 auto 30px auto;
+    
+}
 
-.pricing .text {
-    z-index: 100;
+.cd-testimonials {
+	color: white;
+	text-align: center;
+	list-style: none;
+	padding: 0;
+    margin: 0;
+}
+
+.cd-testimonials > li {
+    opacity: 0;
+    position: static;
+}
+
+.img-wrapper {
+    text-align: center;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
+    top: 0px;
+    display: block;
+    margin: auto !important;
+    width: 100%;
+    display: flex;
+    height: 120px;
+    justify-content: center;
 }
 
-.pricing .text h2 {
-    font-size: 26pt;
+#quote-marks {
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+.author-name {
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    padding-top: 1em;
+
+}
+
+.quote-pic {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 100vw;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16);
+    border: 2px solid white;
+    margin: auto;
+    margin-bottom: 2em;
+    background-image: url('assets/images/nikki_russell.jpg');
+    background-size: contain;
+}
+
+.author-name h2 {
+    display: block;
+    text-transform: uppercase;
+    position: static;
+    text-align: center;
+    font-family: "Avenir-Medium";
+    font-size: 1rem;
+    letter-spacing: 0.9px;
+    font-weight: 100px;
+    padding-top: 10px;
+
+}
+
+
+.cd-testimonials > li:first-child {
+	position: relative;
+	opacity: 1;
+}
+
+.testimonial-content p {
+	line-height: 1.4;
+	margin-bottom: 3em;
+    padding: 0 14px;
+    font-family: "Avenir-Medium" !important;
+    font-size: 1.1rem !important;
     font-weight: 500;
-    padding-bottom: 0.2em;
+}
+
+@media only screen and (min-width: 768px) {
+	.testimonial-content p {
+		
+		font-family: "Avenir-Book";
+	}
+}
+
+@media only screen and (min-width: 1170px) {
+	.testimonial-content p {
+		font-size: 24px;
+		line-height: 2;
+	}
 }
 
 
-.pricing .text p {
-    width: 400px;
-    line-height: 2;
-    font-size: 13pt;
-    padding: 1em 0 3em 0;
-    font-weight: 400;
+.cd-author-info span p {
+	display: inline-block;
+	font-size: 14px;
+	padding-left: 0;
+}
 
+.cd-author-info span p a {
+	color: rgba(126, 129, 136, 1);
+}
+
+.cd-author img,
+.cd-author .cd-author-info {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.cd-author img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.cd-author .cd-author-info {
+	text-align: left;
+	line-height: 1
+}
+
+.cd-author .cd-author-info li:first-child {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.cd-author .cd-author-info li:last-child {
+	font-size: 12px;
+	color: #6b6b70;
+}
+
+ul.cd-author-info {
+	list-style: none;
+}
+
+ul.cd-author-info li span:before {
+	font-family: 'FontAwesome';
+	content: '\f099';
+	font-size: 24px;
+	display: inline-block;
+	position: absolute;
+	margin-top: 2px;
+	font-style: normal;
+	margin-left: -30px;
+}
+
+ul.cd-author-info li span {
+	font-size: 14px;
+	padding-left: 30px;
+	line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-weight: 300;
 }
 
 
-.btn {
-    font-size: 12pt;
-    font-weight: 500;
-} */
+
+@media only screen and (min-width: 768px) {
+	.cd-author img {
+		width: 58px;
+		height: 58px;
+	}
+	.cd-author .cd-author-info {
+		line-height: 1.4;
+	}
+	.cd-author .cd-author-info li:first-child {
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 320px) {}
+
+.flex-direction-nav a {
+	text-decoration: none;
+	display: block;
+	width: 50px;
+	height: 100%;
+	margin: 0px 0 0;
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	overflow: hidden;
+	opacity: 1;
+	background: rgba(245, 245, 245, 1);
+	cursor: pointer;
+	color: rgba(255, 255, 255, .5);
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.flex-direction-nav a:before {
+	font-size: 40px;
+	content: url('https://dl.dropboxusercontent.com/u/97609687/codepen/chevronleft.svg');
+	position: absolute;
+	display: block;
+	top: 50%;
+	padding: 14px 10px 14px 10px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.flex-direction-nav a.flex-next:before {
+	content: url('https://dl.dropboxusercontent.com/u/97609687/codepen/chevronright.svg');
+	padding: 14px 20px 14px 10px;
+}
+
+.flex-direction-nav .flex-prev {
+	left: 0px;
+}
+
+.flex-direction-nav .flex-next {
+	right: 0px;
+	text-align: right;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+	opacity: 1;
+	left: 0px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+	opacity: 1;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+	opacity: 1;
+	right: 0px;
+}
+
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+	opacity: 1;
+}
+
+.flex-direction-nav .flex-disabled {
+	opacity: 0!important;
+	filter: alpha(opacity=0);
+	cursor: default;
+}
+
+.flex-control-paging li a {
+	width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.5);
+    box-sizing: border-box;
+    display: block;
+    background-image: url('assets/dylan.png') !important;
+	cursor: pointer;
+	text-indent: -9999px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+	-webkit-border-radius: 100vw;
+	-moz-border-radius: 100vw;
+    border-radius: 100vw;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.flex-control-paging li a:hover {
+    background: rgba(255,255,255,1);
+}
+
+
+.flex-control-paging li a.flex-active {
+    background: rgba(255,255,255,1);
+    box-shadow: 0px 25px 35px rgba(0,0,0,0.16);
+	cursor: pointer;
+}
+
+.flex-control-nav {
+    bottom: 30px;
+	position: absolute;
+	margin: 0 auto;
+    padding: 0;
+    padding-top: 3em;
+	text-align: center;
+	width: 100%;
+}
+
+.flex-control-nav li {
+	display: inline-block;
+	padding: 0px 5px 0px 5px;
+}
+
+@media screen and (max-width: 767px) {
+	.flex-direction-nav a {
+		width: 30px;
+	}
+	.flex-direction-nav a:before {
+		visibility: hidden;
+	}
+	.flex-direction-nav a:before {
+		padding: 14px 0px 10px 0px;
+	}
+	.flex-direction-nav .flex-prev {
+		left: 0px;
+	}
+	.flex-direction-nav .flex-next {
+		right: 0px;
+		text-align: right;
+	}
+	.flexslider:hover .flex-direction-nav .flex-prev {
+		opacity: 1;
+		left: 0px;
+	}
+	.flexslider:hover .flex-direction-nav .flex-prev:hover {
+		opacity: 1;
+	}
+	.flexslider:hover .flex-direction-nav .flex-next {
+		opacity: 1;
+		right: 0px;
+	}
+	.flex-direction-nav {
+		visibility: hidden;
+	}
+}
+
+
+
+
+
+/* This is the end */
 
 
 .why-us {
@@ -871,6 +1192,7 @@ nav {
     top: 80px;
     margin: auto !important;
     font-family: "Avenir-Book" !important;
+    box-shadow: 0px 25px 35px 0px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -1314,8 +1636,38 @@ footer .social-footer {
         font-size: 1.5rem !important;
     }
 
+
+    .testimonials {
+        top: 150px;
+    }
+
+
+    .cd-testimonials-wrapper {
+        padding-top: 4em;
+        height: 630px;
+        position: static;
+    }
+
+
+    .testimonial-content {
+        width: 95%;
+
+    }
+
+    .testimonial-content p {
+        font-size: 1.1rem !important;
+        line-height: 1.7;
+    }
+
+    .img-wrapper {
+        height: 90px;
+    }
+
+
+
+
     .startup-solutions {
-      top: 130px !important;
+      top: 250px !important;
     }
 
 
@@ -1341,7 +1693,7 @@ footer .social-footer {
 
 
     .services-list {
-      top: 120px;
+      top: 230px;
     }
 
     .service .feature {
@@ -1378,6 +1730,14 @@ footer .social-footer {
 
     .feature hr {
         display: none;
+    }
+
+
+
+    .feature .icon-wrapper img {
+        display: block;
+        margin: auto;
+        margin-bottom: 1.4em;
     }
 
 
@@ -1438,7 +1798,7 @@ footer .social-footer {
     }
 
     .why-us {
-      top: 100px;
+      top: 200px;
 
     }
 
@@ -1493,7 +1853,7 @@ footer .social-footer {
 
     footer {
         height: 520px;
-        top: 100px !important;
+        top: 200px !important;
     }
 
     footer .container {
@@ -1599,6 +1959,15 @@ footer .social-footer {
     top: 22vh;
 }
 
+
+.why-us {
+    top: 550px;
+}
+
+
+footer {
+    top: 550px;
+}
 
 
 
