@@ -3,29 +3,7 @@ $(document).ready(function() {
     
         var menuSwitch = false;
     
-    
-        // $(window).scroll(function() {
-    
-        //     if ($(window).scrollTop() > 200 && menuSwitch == false) {
-        //         $('.nav-bg').removeClass('nav-slideBackup');
-        //         $('.nav-bg').addClass('nav-slideDown');
-        //         $('.nav-bg').css('display', 'block');
-        //         $('.left li a').css('color', 'black');
-        //         $('#top').css('background', 'black');
-        //         $('#bot').css('background', 'black');
-        //         $('.header-logo').attr('src', 'assets/icons/bonnesailogoblack.svg');
-        //         $('.nav-bg ul li a').css('color', 'black');
-    
-        //     } else if ($(window).scrollTop() < 200 && menuSwitch == false) {
-        //         $('.nav-bg').removeClass('nav-slideDown');
-        //         $('.nav-bg').addClass('nav-slideBackup').fadeOut();
-        //         $('.left li a').css('color', 'white');
-        //         $('#top').css('background', 'white');
-        //         $('#bot').css('background', 'white');
-        //         $('.header-logo').attr('src', 'assets/icons/bonnesailogo.svg');
-        //     }
-        // });
-    
+
     
         $('.burger').click(function() {
             if (menuSwitch == false) {
