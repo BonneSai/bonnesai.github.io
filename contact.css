@@ -804,6 +804,12 @@ nav {
 
 
 
+    .mobile-menu ul li a {
+        font-family: "Avenir-Medium" !important;
+    }
+
+
+
     #top {
         width: 27px;
         height: 2px;
