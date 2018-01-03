@@ -943,4 +943,20 @@ nav {
     #header-iphones {
         width: 1200px;
 
+    }
+
+}
+
+
+
+@media screen and (min-width: 1600px) {
+    
+    .controls { 
+        top: 300px;
+    }
+
+
+    #header-iphones {
+        width: 900px;
+    }
 }
