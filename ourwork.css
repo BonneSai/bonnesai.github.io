@@ -780,7 +780,7 @@ top: 0;
 
 
 .testimonials {
-    height: 600px;
+    height: 470px;
     display: block;
     position: relative;
     top: 2150px;
@@ -793,6 +793,7 @@ top: 0;
     width: 90vw;
     margin: auto;
     position: static;
+    height: 440px;
     transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
@@ -862,9 +863,8 @@ a.flex-next, a.flex-prev {
 
 .author-name {
     width: 100%;
-    height: 150px;
+    height: 50px;
     margin: auto;
-    padding-top: 1em;
 
 }
 
@@ -889,7 +889,7 @@ a.flex-next, a.flex-prev {
     font-size: 1rem;
     letter-spacing: 0.9px;
     font-weight: 100px;
-    padding-top: 10px;
+    
 
 }
 
@@ -2074,7 +2074,7 @@ footer .social-footer {
 
 
     .testimonial-container {
-        height: 650px;
+        height: 550px;
     }
 
 
