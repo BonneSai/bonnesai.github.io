@@ -427,10 +427,17 @@ nav {
 }
 
 
-.ul-links:hover {
-    border-bottom: 1px solid white;
+.ul-links::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    transition: width .3s;
+}
 
-
+.ul-links:hover::after {
+    width: 100%;
 }
 
 
